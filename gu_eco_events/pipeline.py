@@ -152,7 +152,7 @@ SEND_DELAY_SECONDS = 1.0  # stay well under Discord webhook rate limits
 
 
 def run_notify(events: list[Event], counts: dict, state_path: str | Path, today: date,
-               mode: str, sender=None, out=sys.stdout) -> int:
+               mode: str, sender=None, out=None) -> int:
     """Plan against prior state, deliver per mode, persist state.
 
     dry-run:     print plan, record messages as sent (scratch/ops testing)
@@ -160,6 +160,7 @@ def run_notify(events: list[Event], counts: dict, state_path: str | Path, today:
     record-only: no delivery, markers untouched (used when no secret is set,
                  so installing the secret later still announces events)
     """
+    out = out or sys.stdout
     if mode not in MODES:
         raise ValueError(f"mode must be one of {MODES}")
     prior = state_mod.load(state_path)
