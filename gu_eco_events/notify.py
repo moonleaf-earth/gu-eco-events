@@ -85,7 +85,10 @@ def plan(events: list[Event], state: dict, today: date) -> list[Message]:
             continue
         if e.cancelled:
             if prev.get("seen_active") and not prev.get("cancellation_notified"):
-                out.append(Message("cancel", e.uid, e.title, e.material_hash(), format_message("cancel", e)))
+                was_notified = prev.get("notified_hash") is not None
+                was_req = prev.get("event", {}).get("registration_required")
+                if was_notified or was_req:
+                    out.append(Message("cancel", e.uid, e.title, e.material_hash(), format_message("cancel", e)))
             continue
         if not e.registration_required:
             continue

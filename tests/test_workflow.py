@@ -28,7 +28,7 @@ def test_publish_workflow():
     
     # tests run before pipeline and publication
     test_idx = step_names.index("Run tests")
-    pipe_idx = step_names.index("Run pipeline")
+    pipe_idx = step_names.index("Run pipeline build")
     assert test_idx < pipe_idx
     
     # check secret is not echoed (can't fully verify, but we can check run commands)
