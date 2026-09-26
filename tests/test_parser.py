@@ -4,6 +4,7 @@ import json
 from datetime import date
 
 from gu_eco_events.pipeline import build, collect
+from gu_eco_events.normalize import location_class
 from gu_eco_events.source.gu import parse_detail_page, parse_listing_page, parse_swedish_dates
 from gu_eco_events.source.transport import FixtureTransport, SourceError
 
@@ -83,6 +84,15 @@ def test_swedish_dates():
     assert parse_swedish_dates("30 september 2026") == [date(2026, 9, 30)]
     assert parse_swedish_dates("24 sept 2026") == [date(2026, 9, 24)]
     assert parse_swedish_dates("1 maj 2027") == [date(2027, 5, 1)]
+
+
+@pytest.mark.parametrize("location", [
+    "Bokmässan, Svenska mässan, Scen G4",
+    "Världskulturmuseets restaurang",
+    "B228, Sprängkullsgatan 19",
+])
+def test_known_goteborg_venues_without_city_name(location):
+    assert location_class(location) == (True, False)
 
 
 def test_baseline_normalization():

@@ -66,8 +66,11 @@ GOTEBORG_VENUES = (
     "sahlgrenska",
     "samhallsvetarhuset",
     "studenternas hus",
+    "sprangkullsgatan",
+    "svenska massan",
     "universitetsplatsen",
     "vasaparken",
+    "varldskulturmuse",  # Världskulturmuseet / Världskulturmuseets restaurang
     "wallenberg",  # Wallenbergsalen / Wallenberglaboratoriet, Medicinareberget
 )
 
