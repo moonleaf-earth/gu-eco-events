@@ -168,7 +168,11 @@ def run_notify(events: list[Event], counts: dict, state_path: str | Path, today:
     new_state = state_mod.update_snapshot(json.loads(json.dumps(prior)), events, today, counts)
 
     if mode == "send" and messages and sender is None:
-        sender = notify.discord_sender(notify.webhook_from_env())
+        try:
+            sender = notify.discord_sender(notify.webhook_from_env())
+        except notify.NotifyError as e:
+            print(f"Webhook secret missing or invalid, falling back to record-only mode: {e}", file=sys.stderr)
+            mode = "record-only"
 
     sent = 0
     failure = None

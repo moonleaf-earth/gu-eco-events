@@ -6,13 +6,13 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: read
 
 jobs:
-  run-and-publish:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       
@@ -22,22 +22,27 @@ jobs:
           python-version: "3.12"
           
       - name: Install dependencies
-        run: |
-          pip install -r requirements-dev.txt
+        run: pip install -r requirements-dev.txt
           
-      - name: Run tests and leak checks
-        env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: |
-          PYTHONPATH=. pytest
-          python -m gu_eco_events check-leaks --tracked --env DISCORD_WEBHOOK_URL public data
+      - name: Run tests
+        run: PYTHONPATH=. pytest
           
       - name: Run pipeline
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
           mkdir -p public data
+          set +e
           python -m gu_eco_events run --live --state data/state.json --out-dir public --mode send
+          code=$?
+          set -e
+          if [ $code -ne 0 ] && [ $code -ne 4 ]; then exit $code; fi
+          if [ $code -eq 4 ]; then echo "NOTIFY_FAILED=1" >> $GITHUB_ENV; fi
+          
+      - name: Leak check
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python -m gu_eco_events check-leaks --tracked --env DISCORD_WEBHOOK_URL public data
           
       - name: Commit state
         run: |
@@ -55,6 +60,22 @@ jobs:
         with:
           path: 'public'
           
+      - name: Fail if notify failed
+        if: env.NOTIFY_FAILED == '1'
+        run: |
+          echo "Discord notification failed, but state and feed are published."
+          exit 1
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

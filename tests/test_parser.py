@@ -110,3 +110,41 @@ def test_baseline_normalization():
     cancelled = by_url["installt-stadsodling-seminarium"][0]
     assert cancelled.cancelled
     assert r.parsed_count == 15 and len(r.events) == 12
+
+def test_registration_detection():
+    from gu_eco_events.model import DetailPage, Link
+    from gu_eco_events.normalize import registration
+    from datetime import date
+    
+    # Anmälan via text
+    d1 = DetailPage(text="Anmälan krävs.", links=(), canonical_url=None, title=None, categories=(), event_types=(), rows=(), location=None, registration_deadline=None, preamble=None, last_modified=None)
+    req, url = registration(d1)
+    assert req and url is None
+    
+    # Registrering via link text
+    d2 = DetailPage(text="abc", links=(Link(text="Registrering", href="https://gu.se/reg", context=""),), canonical_url=None, title=None, categories=(), event_types=(), rows=(), location=None, registration_deadline=None, preamble=None, last_modified=None)
+    req, url = registration(d2)
+    assert req and url == "https://gu.se/reg"
+    
+    # Anmäl dig via extern form
+    d3 = DetailPage(text="abc", links=(Link(text="Länk", href="https://forms.office.com/e/abc", context=""),), canonical_url=None, title=None, categories=(), event_types=(), rows=(), location=None, registration_deadline=None, preamble=None, last_modified=None)
+    req, url = registration(d3)
+    assert req and url == "https://forms.office.com/e/abc"
+    
+    # Explicit URL preferred
+    d4 = DetailPage(text="abc", links=(
+        Link(text="Länk", href="https://forms.office.com/e/abc", context=""),
+        Link(text="Anmälan", href="https://gu.se/explicit", context="")
+    ), canonical_url=None, title=None, categories=(), event_types=(), rows=(), location=None, registration_deadline=None, preamble=None, last_modified=None)
+    req, url = registration(d4)
+    assert req and url == "https://gu.se/explicit"
+    
+    # Registration deadline
+    d5 = DetailPage(text="abc", links=(), registration_deadline=date(2026,10,1), canonical_url=None, title=None, categories=(), event_types=(), rows=(), location=None, preamble=None, last_modified=None)
+    req, url = registration(d5)
+    assert req and url is None
+    
+    # Ingen anmälan krävs
+    d6 = DetailPage(text="Ingen anmälan krävs, kom som du är.", links=(), canonical_url=None, title=None, categories=(), event_types=(), rows=(), location=None, registration_deadline=None, preamble=None, last_modified=None)
+    req, url = registration(d6)
+    assert not req
