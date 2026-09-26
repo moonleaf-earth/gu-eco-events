@@ -176,23 +176,30 @@ def run_notify(events: list[Event], counts: dict, state_path: str | Path, today:
 
     sent = 0
     failure = None
-    for msg in messages:
-        print(json.dumps({**msg.to_dict(), "mode": mode}, ensure_ascii=False), file=out)
-        if mode == "record-only":
-            continue
-        if mode == "send":
-            try:
-                sender(msg.content)
-            except notify.NotifyError as e:
-                failure = e
-                break
-            time.sleep(SEND_DELAY_SECONDS)
-        notify.mark_sent(new_state, msg)
-        sent += 1
+    try:
+        for msg in messages:
+            print(json.dumps({**msg.to_dict(), "mode": mode}, ensure_ascii=False), file=out)
+            if mode == "record-only":
+                continue
+            if mode == "send":
+                try:
+                    sender(msg.content)
+                except notify.NotifyError as e:
+                    failure = e
+                    break
+                except Exception as e:  # noqa: BLE001 - never lose already-sent markers
+                    failure = notify.NotifyError(f"unexpected {type(e).__name__} during delivery")
+                    break
+                time.sleep(SEND_DELAY_SECONDS)
+            notify.mark_sent(new_state, msg)
+            sent += 1
+    finally:
+        # Persist markers for messages already delivered even on an unexpected
+        # abort, so the next run does not resend them.
+        state_mod.save(state_path, new_state)
     kinds = {k: sum(1 for m in messages if m.kind == k) for k in ("new", "update", "cancel")}
     summary = {"planned": len(messages), **kinds, "recorded": sent, "mode": mode}
     print(json.dumps(summary), file=out)
-    state_mod.save(state_path, new_state)
     if failure:
         print(f"notification failed: {failure}", file=sys.stderr)
         return 4

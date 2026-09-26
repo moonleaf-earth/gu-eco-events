@@ -8,6 +8,7 @@ skipped. The webhook URL is read from the environment and never printed.
 
 from __future__ import annotations
 
+import http.client
 import json
 import os
 import re
@@ -154,9 +155,13 @@ def discord_sender(webhook_url: str) -> Callable[[str], None]:
                     time.sleep(min(retry, 30))
                     continue
                 raise NotifyError(f"Discord webhook returned HTTP {e.code}") from None
-            except (urllib.error.URLError, TimeoutError) as e:
+            except urllib.error.URLError as e:
                 reason = type(getattr(e, "reason", e)).__name__
                 raise NotifyError(f"Discord webhook unreachable ({reason})") from None
+            except (OSError, http.client.HTTPException) as e:
+                # getresponse()/read() errors (RemoteDisconnected, ConnectionResetError,
+                # ssl.SSLError, IncompleteRead, timeouts) are not wrapped by urllib.
+                raise NotifyError(f"Discord webhook connection failed ({type(e).__name__})") from None
         raise NotifyError("Discord webhook rate limit persisted")
 
     return send

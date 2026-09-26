@@ -2,6 +2,7 @@ import json
 import pytest
 from pathlib import Path
 from gu_eco_events.ics import validate
+from conftest import plans, summary
 
 def test_ics_generation_idempotency(runner):
     # generate twice
@@ -217,3 +218,42 @@ def test_notify_sender_fails(runner, monkeypatch):
         state = runner.state.read_bytes()
         assert b"events" in state
 
+
+
+def test_notify_partial_send_connection_reset_keeps_sent_markers(runner, monkeypatch):
+    # One message succeeds, then the connection resets: exit 4, and the
+    # delivered message must be recorded so the next run does not resend it.
+    import os
+    from unittest.mock import patch
+    import gu_eco_events.notify
+    import gu_eco_events.pipeline
+
+    monkeypatch.setattr(gu_eco_events.pipeline, "SEND_DELAY_SECONDS", 0)
+    delivered = []
+
+    def flaky_sender(content):
+        if delivered:
+            raise ConnectionResetError(54, "Connection reset by peer")
+        delivered.append(content)
+
+    with patch.dict(os.environ, {"DISCORD_WEBHOOK_URL": "https://discord.com/api/webhooks/123/abc"}), \
+         patch("gu_eco_events.notify.discord_sender", return_value=flaky_sender):
+        code, lines, captured = runner.run("baseline", mode="send")
+    assert code == 4
+    assert "ConnectionResetError" in captured.err
+    first = plans(lines)[0]
+    assert len(plans(lines)) >= 2
+    assert summary(lines)["recorded"] == 1
+
+    events = json.loads(runner.state.read_text())["events"]
+    assert events[first["uid"]].get("notified_hash") is not None
+    assert sum(1 for e in events.values() if e.get("notified_hash") is not None) == 1
+
+    # Next run delivers only the remainder, never the first message again.
+    resent = []
+    with patch.dict(os.environ, {"DISCORD_WEBHOOK_URL": "https://discord.com/api/webhooks/123/abc"}), \
+         patch("gu_eco_events.notify.discord_sender", return_value=resent.append):
+        code2, lines2, _ = runner.run("baseline", mode="send")
+    assert code2 == 0
+    assert first["uid"] not in {p["uid"] for p in plans(lines2)}
+    assert delivered[0] not in resent

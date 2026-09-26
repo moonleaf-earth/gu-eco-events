@@ -21,11 +21,11 @@ PYTHONPATH=. pytest
 ### CLI Modes
 The CLI (`python -m gu_eco_events`) supports several modes:
 - `build`: Fetches events, runs safety guards, and writes feed, but leaves state untouched.
-- `notify`: Plans and sends Discord notifications and updates state. Supports `--mode` (`dry-run`, `send`, `record-only`). Defaults to `dry-run`.
+- `notify`: Plans and sends Discord notifications and updates state. Requires `--mode` (`dry-run`, `send`, `record-only`); there is no default.
   - `dry-run`: Prints plan and records messages as sent, updating the provided state file. To avoid suppressing real notifications, operators running `dry-run` manually should use a separate or temporary state file.
-  - `send`: Delivers via webhook, records in state.
-  - `record-only`: Does not deliver, but records in state (useful when secret is missing).
-- `run`: Runs build and notify in one go.
+  - `send`: Delivers via webhook and marks each message as sent only after Discord accepts it. If delivery fails part-way (HTTP error, connection reset, TLS or read error), messages already delivered stay marked in state, the rest are retried next run, and the command exits with code 4.
+  - `record-only`: Does not deliver and marks no message as sent; only the event snapshot and `last_success` are updated. Used automatically when the secret is missing, so installing `DISCORD_WEBHOOK_URL` later still announces the pending events.
+- `run`: Runs build and notify in one go. `--mode` defaults to `dry-run`.
 - `validate`: Parses an `.ics` file to ensure RFC 5545 validity.
 - `check-leaks`: Scans for webhook URLs or secret values in files.
 
@@ -40,8 +40,9 @@ The CLI (`python -m gu_eco_events`) supports several modes:
 
 ### 1. GitHub Pages
 The feed is published using GitHub Pages.
-1. Go to repository **Settings** -> **Pages**.
-2. Set the **Source** to **GitHub Actions**.
+1. Make the repository **public** (**Settings** -> **General** -> **Danger Zone** -> **Change repository visibility**). On the GitHub Free plan (the `moonleaf-earth` personal account) GitHub Pages is not available for private repositories, so the stable feed URL above only exists once the repo is public. This is safe: no secrets are committed, the Discord webhook lives only in the `DISCORD_WEBHOOK_URL` Actions secret (never logged, and `check-leaks` guards tracked files and the published artifact), and `data/state.json` contains only public GU event data (titles, times, places, URLs) plus content hashes and notification flags.
+2. Go to repository **Settings** -> **Pages**.
+3. Set the **Source** to **GitHub Actions**.
 
 ### 2. Discord Webhook
 1. In Discord, go to the `#eco-events` channel settings.
