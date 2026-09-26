@@ -150,7 +150,7 @@ def discord_sender(webhook_url: str) -> Callable[[str], None]:
                 if e.code == 429 and attempt < 3:
                     try:
                         retry = float(json.loads(e.read() or b"{}").get("retry_after", 2))
-                    except (ValueError, AttributeError):
+                    except (ValueError, AttributeError, OSError, http.client.HTTPException):
                         retry = 2.0
                     time.sleep(min(retry, 30))
                     continue
