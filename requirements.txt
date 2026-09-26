@@ -1,0 +1,8 @@
+# Runtime dependencies (pinned). Install with: pip install -r requirements.txt
+beautifulsoup4==4.15.0
+soupsieve==2.10
+typing_extensions==4.16.0
+icalendar==7.3.0
+python-dateutil==2.9.0.post0
+six==1.17.0
+tzdata==2026.4

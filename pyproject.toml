@@ -1,0 +1,9 @@
+[project]
+name = "gu-eco-events"
+version = "0.1.0"
+description = "Weekly GU 'Hållbarhet & miljö' events -> public ICS feed + Discord registration notices"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
