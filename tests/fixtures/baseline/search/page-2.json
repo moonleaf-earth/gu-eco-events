@@ -1,0 +1,101 @@
+{
+ "stats": {
+  "totalHits": 15
+ },
+ "query": {},
+ "documentList": {
+  "id": "event_sv",
+  "displayName": "Evenemang",
+  "numberOfHits": 15,
+  "documents": [
+   {
+    "_id": "entity:node/301003:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö",
+     "Naturvetenskap & IT"
+    ],
+    "event_end_time": "2026-10-14T08:30:00Z",
+    "event_start_time": "2026-10-14T07:00:00Z",
+    "event_type": "Webinar",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Webbinarium: Cirkulär ekonomi i praktiken",
+    "type": "event",
+    "url": "/evenemang/webbinarium-cirkular-ekonomi"
+   },
+   {
+    "_id": "entity:node/301009:sv_3",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-19T17:00:00Z",
+    "event_start_time": "2026-10-19T15:00:00Z",
+    "event_type": "Workshop",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Workshopserie: Hållbar mat",
+    "type": "event",
+    "url": "/evenemang/workshop-hallbar-mat"
+   },
+   {
+    "_id": "entity:node/301004:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-20T11:00:00Z",
+    "event_start_time": "2026-10-20T10:00:00Z",
+    "event_type": "Föreläsning",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Digital föreläsning om biologisk mångfald",
+    "type": "event",
+    "url": "/evenemang/digital-forelasning-biologisk-mangfald"
+   },
+   {
+    "_id": "entity:node/301005:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-22T14:00:00Z",
+    "event_start_time": "2026-10-22T07:00:00Z",
+    "event_type": "Konferens",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Klimatforskning i Stockholm",
+    "type": "event",
+    "url": "/evenemang/klimatforskning-i-stockholm"
+   },
+   {
+    "_id": "entity:node/301011:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö",
+     "Samhälle & ekonomi"
+    ],
+    "event_end_time": "2026-10-27T15:30:00Z",
+    "event_start_time": "2026-10-27T14:00:00Z",
+    "event_type": "Seminarium",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Klimatdialog – på plats och online",
+    "type": "event",
+    "url": "/evenemang/hybrid-klimatdialog"
+   }
+  ],
+  "pagination": {
+   "offset": 10,
+   "hitsPerPage": 10
+  }
+ },
+ "facets": [],
+ "errorMessages": []
+}

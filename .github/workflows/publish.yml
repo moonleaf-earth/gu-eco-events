@@ -1,0 +1,87 @@
+name: build and publish
+
+on:
+  schedule:
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency: "publish-eco-events"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      notify_failed: ${{ steps.notify.outputs.NOTIFY_FAILED }}
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+          
+      - name: Run tests
+        run: PYTHONPATH=. pytest
+          
+      - name: Run pipeline build
+        run: |
+          mkdir -p public data
+          python -m gu_eco_events build --live --state data/state.json --out-dir public
+          
+      - name: Leak check
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python -m gu_eco_events check-leaks --tracked --env DISCORD_WEBHOOK_URL public data
+          
+      - name: Run pipeline notify
+        id: notify
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          set +e
+          python -m gu_eco_events notify --events public/events.json --state data/state.json --mode send
+          code=$?
+          set -e
+          if [ $code -ne 0 ] && [ $code -ne 4 ]; then exit $code; fi
+          if [ $code -eq 4 ]; then echo "NOTIFY_FAILED=1" >> $GITHUB_OUTPUT; fi
+          
+      - name: Commit state
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/state.json
+          git commit -m "Update state [skip ci]" || echo "No changes to commit"
+          git push
+          
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'public'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        
+      - name: Fail if notify failed
+        if: needs.build.outputs.notify_failed == '1'
+        run: |
+          echo "Discord notification failed, but state and feed are published."
+          exit 1

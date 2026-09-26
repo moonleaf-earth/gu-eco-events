@@ -1,0 +1,36 @@
+{
+ "stats": {
+  "totalHits": 1
+ },
+ "query": {},
+ "documentList": {
+  "id": "event_sv",
+  "displayName": "Evenemang",
+  "numberOfHits": 1,
+  "documents": [
+   {
+    "_id": "entity:node/301001:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö",
+     "Samhälle & ekonomi"
+    ],
+    "event_end_time": "2026-10-01T13:00:00Z",
+    "event_start_time": "2026-10-01T11:15:00Z",
+    "event_type": "Seminarium",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Klimatseminarium: Vad säger forskningen?",
+    "type": "event",
+    "url": "/evenemang/klimatseminarium-pa-humanisten"
+   }
+  ],
+  "pagination": {
+   "offset": 0,
+   "hitsPerPage": 25
+  }
+ },
+ "facets": [],
+ "errorMessages": []
+}

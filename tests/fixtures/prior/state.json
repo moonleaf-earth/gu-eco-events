@@ -1,0 +1,364 @@
+{
+  "events": {
+    "gu-node-301001-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "06d2e218f715d64c",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö",
+          "Samhälle & ekonomi"
+        ],
+        "description": "Forskare samtalar om klimatets läge.\n\nKälla: https://www.gu.se/evenemang/klimatseminarium-pa-humanisten",
+        "end": "2026-10-01T15:00:00+02:00",
+        "last_modified": "2026-09-10",
+        "location": "Humanisten, Lilla hörsalen, Renströmsgatan 6",
+        "online": false,
+        "registration_deadline": null,
+        "registration_required": false,
+        "registration_url": null,
+        "source_id": "entity:node/301001:sv_1",
+        "start": "2026-10-01T13:15:00+02:00",
+        "title": "Klimatseminarium: Vad säger forskningen?",
+        "uid": "gu-node-301001-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/klimatseminarium-pa-humanisten"
+      },
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "material_hash": "075a7fa5023d8517",
+      "notified_hash": null,
+      "seen_active": true
+    },
+    "gu-node-301002-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "9a06a0894eb5b4e5",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö"
+        ],
+        "description": "Hur bygger vi en hållbar stad?\n\nAnmälan krävs (sista anmälningsdag 2026-10-05): https://forms.office.com/e/FixtureA1\n\nKälla: https://www.gu.se/evenemang/hallbar-stad-panel",
+        "end": "2026-10-08T19:00:00+02:00",
+        "last_modified": "2026-09-10",
+        "location": "Stadsbiblioteket, Götaplatsen, Göteborg",
+        "online": false,
+        "registration_deadline": "2026-10-05",
+        "registration_required": true,
+        "registration_url": "https://forms.office.com/e/FixtureA1",
+        "source_id": "entity:node/301002:sv_1",
+        "start": "2026-10-08T18:00:00+02:00",
+        "title": "Hållbar stad – paneldebatt",
+        "uid": "gu-node-301002-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/hallbar-stad-panel"
+      },
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "material_hash": "ec05dca1f74d0de3",
+      "notified_hash": "ec05dca1f74d0de3",
+      "seen_active": true
+    },
+    "gu-node-301003-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "58629ee9c6f47bbc",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö",
+          "Naturvetenskap & IT"
+        ],
+        "description": "Ett webbinarium om cirkulära affärsmodeller.\n\nKälla: https://www.gu.se/evenemang/webbinarium-cirkular-ekonomi",
+        "end": "2026-10-14T10:30:00+02:00",
+        "last_modified": "2026-09-10",
+        "location": "Online",
+        "online": true,
+        "registration_deadline": null,
+        "registration_required": false,
+        "registration_url": null,
+        "source_id": "entity:node/301003:sv_1",
+        "start": "2026-10-14T09:00:00+02:00",
+        "title": "Webbinarium: Cirkulär ekonomi i praktiken",
+        "uid": "gu-node-301003-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/webbinarium-cirkular-ekonomi"
+      },
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "material_hash": "e35c18df49d8c857",
+      "notified_hash": null,
+      "seen_active": true
+    },
+    "gu-node-301004-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "79c43c101eba1735",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö"
+        ],
+        "description": "Om arter, ekosystem och vår framtid.\n\nAnmälan krävs: https://docs.google.com/forms/d/e/FixtureB2/viewform\n\nKälla: https://www.gu.se/evenemang/digital-forelasning-biologisk-mangfald",
+        "end": "2026-10-20T13:00:00+02:00",
+        "last_modified": "2026-09-10",
+        "location": "Digitalt",
+        "online": true,
+        "registration_deadline": null,
+        "registration_required": true,
+        "registration_url": "https://docs.google.com/forms/d/e/FixtureB2/viewform",
+        "source_id": "entity:node/301004:sv_1",
+        "start": "2026-10-20T12:00:00+02:00",
+        "title": "Digital föreläsning om biologisk mångfald",
+        "uid": "gu-node-301004-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/digital-forelasning-biologisk-mangfald"
+      },
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "material_hash": "1245401d1901f1fd",
+      "notified_hash": "1245401d1901f1fd",
+      "seen_active": true
+    },
+    "gu-node-301007-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "2b454066faadc7c4",
+      "event": {
+        "all_day": true,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö",
+          "Utbildning & lärande"
+        ],
+        "description": "Två dagar om hållbarhet på campus.\n\nKälla: https://www.gu.se/evenemang/hallbarhetsveckan-2026",
+        "end": "2026-10-13",
+        "last_modified": "2026-09-10",
+        "location": "Campus Näckrosen, Göteborg",
+        "online": false,
+        "registration_deadline": null,
+        "registration_required": false,
+        "registration_url": null,
+        "source_id": "entity:node/301007:sv_1",
+        "start": "2026-10-12",
+        "title": "Hållbarhetsveckan 2026",
+        "uid": "gu-node-301007-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/hallbarhetsveckan-2026"
+      },
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "material_hash": "649ecee3c08c7ad9",
+      "notified_hash": null,
+      "seen_active": true
+    },
+    "gu-node-301007-2@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "3e72667cab535ea9",
+      "event": {
+        "all_day": true,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö",
+          "Utbildning & lärande"
+        ],
+        "description": "Två dagar om hållbarhet på campus.\n\nKälla: https://www.gu.se/evenemang/hallbarhetsveckan-2026",
+        "end": "2026-10-14",
+        "last_modified": "2026-09-10",
+        "location": "Campus Näckrosen, Göteborg",
+        "online": false,
+        "registration_deadline": null,
+        "registration_required": false,
+        "registration_url": null,
+        "source_id": "entity:node/301007:sv_2",
+        "start": "2026-10-13",
+        "title": "Hållbarhetsveckan 2026",
+        "uid": "gu-node-301007-2@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/hallbarhetsveckan-2026"
+      },
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "material_hash": "67d63c7ca3bf9406",
+      "notified_hash": null,
+      "seen_active": true
+    },
+    "gu-node-301008-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "db51979e88b525d7",
+      "event": {
+        "all_day": true,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö",
+          "Kultur & språk"
+        ],
+        "description": "En utställning om haven.\n\nKälla: https://www.gu.se/evenemang/utstallning-hav-i-forandring",
+        "end": "2026-10-04",
+        "last_modified": "2026-09-10",
+        "location": "Universitetsbiblioteket, Renströmsgatan 4, Göteborg",
+        "online": false,
+        "registration_deadline": null,
+        "registration_required": false,
+        "registration_url": null,
+        "source_id": "entity:node/301008:sv_1",
+        "start": "2026-10-03",
+        "title": "Utställning: Hav i förändring",
+        "uid": "gu-node-301008-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/utstallning-hav-i-forandring"
+      },
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "material_hash": "e575b702f62b7dae",
+      "notified_hash": null,
+      "seen_active": true
+    },
+    "gu-node-301009-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "2241fb7c1abef9c0",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö"
+        ],
+        "description": "Tre kvällar om mat och klimat.\n\nAnmälan krävs (sista anmälningsdag 2026-09-20): https://simplesignup.se/event/fixture-e5\n\nKälla: https://www.gu.se/evenemang/workshop-hallbar-mat",
+        "end": "2026-10-05T19:00:00+02:00",
+        "last_modified": "2026-09-10",
+        "location": "Online via Zoom",
+        "online": true,
+        "registration_deadline": "2026-09-20",
+        "registration_required": true,
+        "registration_url": "https://simplesignup.se/event/fixture-e5",
+        "source_id": "entity:node/301009:sv_1",
+        "start": "2026-10-05T17:00:00+02:00",
+        "title": "Workshopserie: Hållbar mat",
+        "uid": "gu-node-301009-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/workshop-hallbar-mat"
+      },
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "material_hash": "846ef4b6572de06b",
+      "notified_hash": "846ef4b6572de06b",
+      "seen_active": true
+    },
+    "gu-node-301009-2@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "e04b37a9b1d19af8",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö"
+        ],
+        "description": "Tre kvällar om mat och klimat.\n\nAnmälan krävs (sista anmälningsdag 2026-09-20): https://simplesignup.se/event/fixture-e5\n\nKälla: https://www.gu.se/evenemang/workshop-hallbar-mat",
+        "end": "2026-10-12T19:00:00+02:00",
+        "last_modified": "2026-09-10",
+        "location": "Online via Zoom",
+        "online": true,
+        "registration_deadline": "2026-09-20",
+        "registration_required": true,
+        "registration_url": "https://simplesignup.se/event/fixture-e5",
+        "source_id": "entity:node/301009:sv_2",
+        "start": "2026-10-12T17:00:00+02:00",
+        "title": "Workshopserie: Hållbar mat",
+        "uid": "gu-node-301009-2@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/workshop-hallbar-mat"
+      },
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "material_hash": "ad8a3123810ce59d",
+      "notified_hash": "ad8a3123810ce59d",
+      "seen_active": true
+    },
+    "gu-node-301009-3@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "f4e620e430faf248",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö"
+        ],
+        "description": "Tre kvällar om mat och klimat.\n\nAnmälan krävs (sista anmälningsdag 2026-09-20): https://simplesignup.se/event/fixture-e5\n\nKälla: https://www.gu.se/evenemang/workshop-hallbar-mat",
+        "end": "2026-10-19T19:00:00+02:00",
+        "last_modified": "2026-09-10",
+        "location": "Online via Zoom",
+        "online": true,
+        "registration_deadline": "2026-09-20",
+        "registration_required": true,
+        "registration_url": "https://simplesignup.se/event/fixture-e5",
+        "source_id": "entity:node/301009:sv_3",
+        "start": "2026-10-19T17:00:00+02:00",
+        "title": "Workshopserie: Hållbar mat",
+        "uid": "gu-node-301009-3@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/workshop-hallbar-mat"
+      },
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "material_hash": "72d43b5bf331758c",
+      "notified_hash": "72d43b5bf331758c",
+      "seen_active": true
+    },
+    "gu-node-301010-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "c8b795d38cf9cc62",
+      "event": {
+        "all_day": false,
+        "cancelled": true,
+        "categories": [
+          "Hållbarhet & miljö"
+        ],
+        "description": "Seminariet är inställt.\n\nKälla: https://www.gu.se/evenemang/installt-stadsodling-seminarium",
+        "end": "2026-10-09T11:00:00+02:00",
+        "last_modified": "2026-09-10",
+        "location": "Pedagogen, hus A, Göteborg",
+        "online": false,
+        "registration_deadline": null,
+        "registration_required": false,
+        "registration_url": null,
+        "source_id": "entity:node/301010:sv_1",
+        "start": "2026-10-09T10:00:00+02:00",
+        "title": "INSTÄLLT: Stadsodling i Göteborg",
+        "uid": "gu-node-301010-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/installt-stadsodling-seminarium"
+      },
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "material_hash": "6d81a23cd62c2df9",
+      "notified_hash": null
+    },
+    "gu-node-301011-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "5083749861d7abb5",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö",
+          "Samhälle & ekonomi"
+        ],
+        "description": "En dialog om klimatomställning.\n\nAnmälan krävs: https://www.eventbrite.se/e/fixture-f6\n\nKälla: https://www.gu.se/evenemang/hybrid-klimatdialog",
+        "end": "2026-10-27T16:30:00+01:00",
+        "last_modified": "2026-09-10",
+        "location": "Handelshögskolan, Vasagatan 1, Göteborg och online",
+        "online": true,
+        "registration_deadline": null,
+        "registration_required": true,
+        "registration_url": "https://www.eventbrite.se/e/fixture-f6",
+        "source_id": "entity:node/301011:sv_1",
+        "start": "2026-10-27T15:00:00+01:00",
+        "title": "Klimatdialog – på plats och online",
+        "uid": "gu-node-301011-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/hybrid-klimatdialog"
+      },
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "material_hash": "2f57acc79f568844",
+      "notified_hash": "2f57acc79f568844",
+      "seen_active": true
+    }
+  },
+  "last_success": {
+    "date": "2026-09-19",
+    "event_count": 12,
+    "parsed_count": 15,
+    "source_total_hits": 15
+  },
+  "schema": 1
+}
