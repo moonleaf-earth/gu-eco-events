@@ -1,0 +1,18 @@
+{
+ "stats": {
+  "totalHits": 0
+ },
+ "query": {},
+ "documentList": {
+  "id": "event_sv",
+  "displayName": "Evenemang",
+  "numberOfHits": 0,
+  "documents": [],
+  "pagination": {
+   "offset": 0,
+   "hitsPerPage": 25
+  }
+ },
+ "facets": [],
+ "errorMessages": []
+}

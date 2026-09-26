@@ -1,0 +1,35 @@
+{
+ "stats": {
+  "totalHits": 1
+ },
+ "query": {},
+ "documentList": {
+  "id": "event_sv",
+  "displayName": "Evenemang",
+  "numberOfHits": 1,
+  "documents": [
+   {
+    "_id": "entity:node/303001:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-15T14:00:00Z",
+    "event_start_time": "2026-10-15T12:00:00Z",
+    "event_type": "Workshop",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Workshop: Stadsodling för alla",
+    "type": "event",
+    "url": "/evenemang/anmalan-stadsodling-workshop"
+   }
+  ],
+  "pagination": {
+   "offset": 0,
+   "hitsPerPage": 25
+  }
+ },
+ "facets": [],
+ "errorMessages": []
+}

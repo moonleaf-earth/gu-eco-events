@@ -1,0 +1,183 @@
+{
+ "stats": {
+  "totalHits": 15
+ },
+ "query": {},
+ "documentList": {
+  "id": "event_sv",
+  "displayName": "Evenemang",
+  "numberOfHits": 15,
+  "documents": [
+   {
+    "_id": "entity:node/301001:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö",
+     "Samhälle & ekonomi"
+    ],
+    "event_end_time": "2026-10-01T13:00:00Z",
+    "event_start_time": "2026-10-01T11:15:00Z",
+    "event_type": "Seminarium",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Klimatseminarium: Vad säger forskningen?",
+    "type": "event",
+    "url": "/evenemang/klimatseminarium-pa-humanisten"
+   },
+   {
+    "_id": "entity:node/301006:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-02T12:00:00Z",
+    "event_start_time": "2026-10-02T12:00:00Z",
+    "event_type": "Öppet hus",
+    "is_all_day_event": "true",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Fältexkursion till Tjärnö",
+    "type": "event",
+    "url": "/evenemang/faltexkursion-tjarno"
+   },
+   {
+    "_id": "entity:node/301008:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö",
+     "Kultur & språk"
+    ],
+    "event_end_time": "2026-10-03T12:00:00Z",
+    "event_start_time": "2026-10-03T12:00:00Z",
+    "event_type": "Utställning",
+    "is_all_day_event": "true",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Utställning: Hav i förändring",
+    "type": "event",
+    "url": "/evenemang/utstallning-hav-i-forandring"
+   },
+   {
+    "_id": "entity:node/301009:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-05T17:00:00Z",
+    "event_start_time": "2026-10-05T15:00:00Z",
+    "event_type": "Workshop",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Workshopserie: Hållbar mat",
+    "type": "event",
+    "url": "/evenemang/workshop-hallbar-mat"
+   },
+   {
+    "_id": "entity:node/301002:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-08T17:00:00Z",
+    "event_start_time": "2026-10-08T16:00:00Z",
+    "event_type": "Föreläsning",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Hållbar stad – paneldebatt",
+    "type": "event",
+    "url": "/evenemang/hallbar-stad-panel"
+   },
+   {
+    "_id": "entity:node/301010:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-09T09:00:00Z",
+    "event_start_time": "2026-10-09T08:00:00Z",
+    "event_type": "Seminarium",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "INSTÄLLT: Stadsodling i Göteborg",
+    "type": "event",
+    "url": "/evenemang/installt-stadsodling-seminarium"
+   },
+   {
+    "_id": "entity:node/301012:sv_1",
+    "event_area": [
+     "Kultur & språk"
+    ],
+    "event_end_time": "2026-10-10T15:00:00Z",
+    "event_start_time": "2026-10-10T09:00:00Z",
+    "event_type": "Utställning",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Konstutställning: Ljus",
+    "type": "event",
+    "url": "/evenemang/konstutstallning-ljus"
+   },
+   {
+    "_id": "entity:node/301007:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö",
+     "Utbildning & lärande"
+    ],
+    "event_end_time": "2026-10-12T12:00:00Z",
+    "event_start_time": "2026-10-12T12:00:00Z",
+    "event_type": "Konferens",
+    "is_all_day_event": "true",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Hållbarhetsveckan 2026",
+    "type": "event",
+    "url": "/evenemang/hallbarhetsveckan-2026"
+   },
+   {
+    "_id": "entity:node/301009:sv_2",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-12T17:00:00Z",
+    "event_start_time": "2026-10-12T15:00:00Z",
+    "event_type": "Workshop",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Workshopserie: Hållbar mat",
+    "type": "event",
+    "url": "/evenemang/workshop-hallbar-mat"
+   },
+   {
+    "_id": "entity:node/301007:sv_2",
+    "event_area": [
+     "Hållbarhet & miljö",
+     "Utbildning & lärande"
+    ],
+    "event_end_time": "2026-10-13T12:00:00Z",
+    "event_start_time": "2026-10-13T12:00:00Z",
+    "event_type": "Konferens",
+    "is_all_day_event": "true",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Hållbarhetsveckan 2026",
+    "type": "event",
+    "url": "/evenemang/hallbarhetsveckan-2026"
+   }
+  ],
+  "pagination": {
+   "offset": 0,
+   "hitsPerPage": 10
+  }
+ },
+ "facets": [],
+ "errorMessages": []
+}

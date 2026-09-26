@@ -1,0 +1,100 @@
+{
+ "stats": {
+  "totalHits": 5
+ },
+ "query": {},
+ "documentList": {
+  "id": "event_sv",
+  "displayName": "Evenemang",
+  "numberOfHits": 5,
+  "documents": [
+   {
+    "_id": "entity:node/301001:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö",
+     "Samhälle & ekonomi"
+    ],
+    "event_end_time": "2026-10-01T13:00:00Z",
+    "event_start_time": "2026-10-01T11:15:00Z",
+    "event_type": "Seminarium",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Klimatseminarium: Vad säger forskningen?",
+    "type": "event",
+    "url": "/evenemang/klimatseminarium-pa-humanisten"
+   },
+   {
+    "_id": "entity:node/301002:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-08T17:00:00Z",
+    "event_start_time": "2026-10-08T16:00:00Z",
+    "event_type": "Föreläsning",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Hållbar stad – paneldebatt",
+    "type": "event",
+    "url": "/evenemang/hallbar-stad-panel"
+   },
+   {
+    "_id": "entity:node/305001:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-10T09:00:00Z",
+    "event_start_time": "2026-10-10T08:00:00Z",
+    "event_type": "Seminarium",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Evenemang 1",
+    "type": "event",
+    "url": "/evenemang/trasig-sida-1"
+   },
+   {
+    "_id": "entity:node/305002:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-11T09:00:00Z",
+    "event_start_time": "2026-10-11T08:00:00Z",
+    "event_type": "Seminarium",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Evenemang 2",
+    "type": "event",
+    "url": "/evenemang/trasig-sida-2"
+   },
+   {
+    "_id": "entity:node/305003:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-12T09:00:00Z",
+    "event_start_time": "2026-10-12T08:00:00Z",
+    "event_type": "Seminarium",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Evenemang 3",
+    "type": "event",
+    "url": "/evenemang/trasig-sida-3"
+   }
+  ],
+  "pagination": {
+   "offset": 0,
+   "hitsPerPage": 25
+  }
+ },
+ "facets": [],
+ "errorMessages": []
+}

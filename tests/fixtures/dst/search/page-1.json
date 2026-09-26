@@ -1,0 +1,115 @@
+{
+ "stats": {
+  "totalHits": 6
+ },
+ "query": {},
+ "documentList": {
+  "id": "event_sv",
+  "displayName": "Evenemang",
+  "numberOfHits": 6,
+  "documents": [
+   {
+    "_id": "entity:node/302001:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-24T09:00:00Z",
+    "event_start_time": "2026-10-24T08:00:00Z",
+    "event_type": "Seminarium",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Seminarium före vintertid",
+    "type": "event",
+    "url": "/evenemang/dst-fore-omstallning"
+   },
+   {
+    "_id": "entity:node/302002:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-25T03:00:00Z",
+    "event_start_time": "2026-10-24T23:30:00Z",
+    "event_type": "Övrigt",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Nattvandring genom omställningen",
+    "type": "event",
+    "url": "/evenemang/dst-natten"
+   },
+   {
+    "_id": "entity:node/302004:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-25T12:00:00Z",
+    "event_start_time": "2026-10-25T12:00:00Z",
+    "event_type": "Konferens",
+    "is_all_day_event": "true",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Heldag på omställningsdagen",
+    "type": "event",
+    "url": "/evenemang/dst-heldag-omstallning"
+   },
+   {
+    "_id": "entity:node/302003:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2026-10-26T10:00:00Z",
+    "event_start_time": "2026-10-26T09:00:00Z",
+    "event_type": "Seminarium",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Seminarium efter vintertid",
+    "type": "event",
+    "url": "/evenemang/dst-efter-omstallning"
+   },
+   {
+    "_id": "entity:node/302005:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2027-03-26T10:00:00Z",
+    "event_start_time": "2027-03-26T09:00:00Z",
+    "event_type": "Seminarium",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Vårseminarium före sommartid",
+    "type": "event",
+    "url": "/evenemang/dst-var-fore"
+   },
+   {
+    "_id": "entity:node/302006:sv_1",
+    "event_area": [
+     "Hållbarhet & miljö"
+    ],
+    "event_end_time": "2027-03-29T09:00:00Z",
+    "event_start_time": "2027-03-29T08:00:00Z",
+    "event_type": "Seminarium",
+    "is_all_day_event": "false",
+    "is_event_series": "false",
+    "is_range": "false",
+    "preamble": "",
+    "title": "Vårseminarium efter sommartid",
+    "type": "event",
+    "url": "/evenemang/dst-var-efter"
+   }
+  ],
+  "pagination": {
+   "offset": 0,
+   "hitsPerPage": 25
+  }
+ },
+ "facets": [],
+ "errorMessages": []
+}

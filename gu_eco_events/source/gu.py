@@ -38,10 +38,10 @@ def _utc(s: str | None) -> datetime | None:
 
 
 def parse_listing_page(payload: dict) -> tuple[list[ListingHit], int, int]:
-    """Return (hits, total_hits, offset) for one searcher response."""
+    """Return (hits, total_hits, hits_per_page) for one searcher response."""
     doc_list = payload.get("documentList") or {}
     total = int((payload.get("stats") or {}).get("totalHits") or 0)
-    offset = int((doc_list.get("pagination") or {}).get("offset") or 0)
+    per_page = int((doc_list.get("pagination") or {}).get("hitsPerPage") or 0)
     hits = []
     for d in doc_list.get("documents") or []:
         if d.get("type") not in (None, "event"):
@@ -58,7 +58,7 @@ def parse_listing_page(payload: dict) -> tuple[list[ListingHit], int, int]:
                 event_types=_as_tuple(d.get("event_type")),
             )
         )
-    return hits, total, offset
+    return hits, total, per_page
 
 
 # --- detail (HTML) -------------------------------------------------------

@@ -208,11 +208,12 @@ def resolve_times(hit: ListingHit, index: int, group_size: int, rows: tuple[Deta
             return (True, *_all_day(d0, d1))
         return (False, *_timed(d0, d1, ts, te))
 
-    # Detail page gave no dates: fall back to the searcher's own times.
-    if hit.start_utc is None:
-        return None
+    # Detail rows exist but none matches this hit: use the searcher's times.
+    if not rows or hit.start_utc is None:
+        return None  # no authoritative date on the detail page
     if hit.all_day:
-        return (True, *_all_day(local_day, hit.end_utc.astimezone(TZ).date() if hit.end_utc else local_day))
+        end_day = hit.end_utc.astimezone(TZ).date() if hit.end_utc else local_day
+        return (True, *_all_day(local_day, max(end_day, local_day)))
     s = hit.start_utc.astimezone(TZ)
     e = hit.end_utc.astimezone(TZ) if hit.end_utc and hit.end_utc > hit.start_utc else None
     return (False, *_timed(s.date(), (e or s).date(), s.time(), e.time() if e else None))

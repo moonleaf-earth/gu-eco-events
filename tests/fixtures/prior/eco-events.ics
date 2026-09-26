@@ -1,0 +1,203 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//moonleaf-earth//gu-eco-events//SV
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:GU Hållbarhet & miljö (Göteborg/online)
+NAME:GU Hållbarhet & miljö (Göteborg/online)
+X-WR-TIMEZONE:Europe/Stockholm
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VTIMEZONE
+TZID:Europe/Stockholm
+X-LIC-LOCATION:Europe/Stockholm
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:gu-node-301001-1@gu-eco-events.moonleaf-earth.github.io
+DTSTAMP:20260910T000000Z
+DTSTART;TZID=Europe/Stockholm:20261001T131500
+DTEND;TZID=Europe/Stockholm:20261001T150000
+LAST-MODIFIED:20260910T000000Z
+SUMMARY:Klimatseminarium: Vad säger forskningen?
+LOCATION:Humanisten\, Lilla hörsalen\, Renströmsgatan 6
+URL:https://www.gu.se/evenemang/klimatseminarium-pa-humanisten
+DESCRIPTION:Forskare samtalar om klimatets läge.\n\nKälla: https://www.gu
+ .se/evenemang/klimatseminarium-pa-humanisten
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:gu-node-301008-1@gu-eco-events.moonleaf-earth.github.io
+DTSTAMP:20260910T000000Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+LAST-MODIFIED:20260910T000000Z
+SUMMARY:Utställning: Hav i förändring
+LOCATION:Universitetsbiblioteket\, Renströmsgatan 4\, Göteborg
+URL:https://www.gu.se/evenemang/utstallning-hav-i-forandring
+DESCRIPTION:En utställning om haven.\n\nKälla: https://www.gu.se/eveneman
+ g/utstallning-hav-i-forandring
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:gu-node-301009-1@gu-eco-events.moonleaf-earth.github.io
+DTSTAMP:20260910T000000Z
+DTSTART;TZID=Europe/Stockholm:20261005T170000
+DTEND;TZID=Europe/Stockholm:20261005T190000
+LAST-MODIFIED:20260910T000000Z
+SUMMARY:Workshopserie: Hållbar mat
+LOCATION:Online via Zoom
+URL:https://www.gu.se/evenemang/workshop-hallbar-mat
+DESCRIPTION:Tre kvällar om mat och klimat.\n\nAnmälan krävs (sista anmä
+ lningsdag 2026-09-20): https://simplesignup.se/event/fixture-e5\n\nKälla:
+  https://www.gu.se/evenemang/workshop-hallbar-mat
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:gu-node-301002-1@gu-eco-events.moonleaf-earth.github.io
+DTSTAMP:20260910T000000Z
+DTSTART;TZID=Europe/Stockholm:20261008T180000
+DTEND;TZID=Europe/Stockholm:20261008T190000
+LAST-MODIFIED:20260910T000000Z
+SUMMARY:Hållbar stad – paneldebatt
+LOCATION:Stadsbiblioteket\, Götaplatsen\, Göteborg
+URL:https://www.gu.se/evenemang/hallbar-stad-panel
+DESCRIPTION:Hur bygger vi en hållbar stad?\n\nAnmälan krävs (sista anmä
+ lningsdag 2026-10-05): https://forms.office.com/e/FixtureA1\n\nKälla: htt
+ ps://www.gu.se/evenemang/hallbar-stad-panel
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:gu-node-301010-1@gu-eco-events.moonleaf-earth.github.io
+DTSTAMP:20260910T000000Z
+DTSTART;TZID=Europe/Stockholm:20261009T100000
+DTEND;TZID=Europe/Stockholm:20261009T110000
+LAST-MODIFIED:20260910T000000Z
+SUMMARY:INSTÄLLT: Stadsodling i Göteborg
+LOCATION:Pedagogen\, hus A\, Göteborg
+URL:https://www.gu.se/evenemang/installt-stadsodling-seminarium
+DESCRIPTION:Seminariet är inställt.\n\nKälla: https://www.gu.se/eveneman
+ g/installt-stadsodling-seminarium
+STATUS:CANCELLED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:gu-node-301007-1@gu-eco-events.moonleaf-earth.github.io
+DTSTAMP:20260910T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+LAST-MODIFIED:20260910T000000Z
+SUMMARY:Hållbarhetsveckan 2026
+LOCATION:Campus Näckrosen\, Göteborg
+URL:https://www.gu.se/evenemang/hallbarhetsveckan-2026
+DESCRIPTION:Två dagar om hållbarhet på campus.\n\nKälla: https://www.gu
+ .se/evenemang/hallbarhetsveckan-2026
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:gu-node-301009-2@gu-eco-events.moonleaf-earth.github.io
+DTSTAMP:20260910T000000Z
+DTSTART;TZID=Europe/Stockholm:20261012T170000
+DTEND;TZID=Europe/Stockholm:20261012T190000
+LAST-MODIFIED:20260910T000000Z
+SUMMARY:Workshopserie: Hållbar mat
+LOCATION:Online via Zoom
+URL:https://www.gu.se/evenemang/workshop-hallbar-mat
+DESCRIPTION:Tre kvällar om mat och klimat.\n\nAnmälan krävs (sista anmä
+ lningsdag 2026-09-20): https://simplesignup.se/event/fixture-e5\n\nKälla:
+  https://www.gu.se/evenemang/workshop-hallbar-mat
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:gu-node-301007-2@gu-eco-events.moonleaf-earth.github.io
+DTSTAMP:20260910T000000Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+LAST-MODIFIED:20260910T000000Z
+SUMMARY:Hållbarhetsveckan 2026
+LOCATION:Campus Näckrosen\, Göteborg
+URL:https://www.gu.se/evenemang/hallbarhetsveckan-2026
+DESCRIPTION:Två dagar om hållbarhet på campus.\n\nKälla: https://www.gu
+ .se/evenemang/hallbarhetsveckan-2026
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:gu-node-301003-1@gu-eco-events.moonleaf-earth.github.io
+DTSTAMP:20260910T000000Z
+DTSTART;TZID=Europe/Stockholm:20261014T090000
+DTEND;TZID=Europe/Stockholm:20261014T103000
+LAST-MODIFIED:20260910T000000Z
+SUMMARY:Webbinarium: Cirkulär ekonomi i praktiken
+LOCATION:Online
+URL:https://www.gu.se/evenemang/webbinarium-cirkular-ekonomi
+DESCRIPTION:Ett webbinarium om cirkulära affärsmodeller.\n\nKälla: https
+ ://www.gu.se/evenemang/webbinarium-cirkular-ekonomi
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:gu-node-301009-3@gu-eco-events.moonleaf-earth.github.io
+DTSTAMP:20260910T000000Z
+DTSTART;TZID=Europe/Stockholm:20261019T170000
+DTEND;TZID=Europe/Stockholm:20261019T190000
+LAST-MODIFIED:20260910T000000Z
+SUMMARY:Workshopserie: Hållbar mat
+LOCATION:Online via Zoom
+URL:https://www.gu.se/evenemang/workshop-hallbar-mat
+DESCRIPTION:Tre kvällar om mat och klimat.\n\nAnmälan krävs (sista anmä
+ lningsdag 2026-09-20): https://simplesignup.se/event/fixture-e5\n\nKälla:
+  https://www.gu.se/evenemang/workshop-hallbar-mat
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:gu-node-301004-1@gu-eco-events.moonleaf-earth.github.io
+DTSTAMP:20260910T000000Z
+DTSTART;TZID=Europe/Stockholm:20261020T120000
+DTEND;TZID=Europe/Stockholm:20261020T130000
+LAST-MODIFIED:20260910T000000Z
+SUMMARY:Digital föreläsning om biologisk mångfald
+LOCATION:Digitalt
+URL:https://www.gu.se/evenemang/digital-forelasning-biologisk-mangfald
+DESCRIPTION:Om arter\, ekosystem och vår framtid.\n\nAnmälan krävs: http
+ s://docs.google.com/forms/d/e/FixtureB2/viewform\n\nKälla: https://www.gu
+ .se/evenemang/digital-forelasning-biologisk-mangfald
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:gu-node-301011-1@gu-eco-events.moonleaf-earth.github.io
+DTSTAMP:20260910T000000Z
+DTSTART;TZID=Europe/Stockholm:20261027T150000
+DTEND;TZID=Europe/Stockholm:20261027T163000
+LAST-MODIFIED:20260910T000000Z
+SUMMARY:Klimatdialog – på plats och online
+LOCATION:Handelshögskolan\, Vasagatan 1\, Göteborg och online
+URL:https://www.gu.se/evenemang/hybrid-klimatdialog
+DESCRIPTION:En dialog om klimatomställning.\n\nAnmälan krävs: https://ww
+ w.eventbrite.se/e/fixture-f6\n\nKälla: https://www.gu.se/evenemang/hybrid
+ -klimatdialog
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

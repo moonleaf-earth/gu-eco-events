@@ -46,11 +46,11 @@ def collect(transport) -> tuple[list[tuple[list[ListingHit], DetailPage]], int]:
     hits: list[ListingHit] = []
     offset, total, pages = 0, None, 0
     while True:
-        page_hits, page_total, _ = parse_listing_page(transport.search_page(offset))
+        page_hits, page_total, per_page = parse_listing_page(transport.search_page(offset))
         total = page_total if total is None else total
         hits.extend(page_hits)
         pages += 1
-        offset += config.HITS_PER_PAGE
+        offset += per_page or len(page_hits) or config.HITS_PER_PAGE
         if offset >= total or not page_hits:
             break
         if pages >= config.MAX_PAGES:
