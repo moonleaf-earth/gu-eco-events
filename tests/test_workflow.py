@@ -6,6 +6,8 @@ import yaml
 def test_publish_workflow():
     wf_path = Path(".github/workflows/publish.yml")
     wf = yaml.safe_load(wf_path.read_text())
+    # Discord is the only notification channel; no Slack secret is wired in.
+    assert "ECO_EVENTS_SLACK_WEBHOOK_URL" not in wf_path.read_text()
     
     # Assert schedule and workflow_dispatch
     triggers = wf.get(True, wf.get("on", {}))
@@ -46,28 +48,16 @@ def test_publish_workflow():
     assert deploy["permissions"]["id-token"] == "write"
 
 
-def test_publish_workflow_slack_and_failure_summary():
+def test_publish_workflow_failure_summary():
     wf = yaml.safe_load(Path(".github/workflows/publish.yml").read_text())
     build = wf["jobs"]["build"]
     steps = {s.get("name"): s for s in build["steps"]}
 
-    leak = steps["Leak check"]
-    assert leak["env"]["ECO_EVENTS_SLACK_WEBHOOK_URL"] == "${{ secrets.ECO_EVENTS_SLACK_WEBHOOK_URL }}"
-    assert "--env ECO_EVENTS_SLACK_WEBHOOK_URL" in leak["run"]
-
     notify_step = steps["Run pipeline notify"]
-    assert notify_step["env"]["ECO_EVENTS_SLACK_WEBHOOK_URL"] == "${{ secrets.ECO_EVENTS_SLACK_WEBHOOK_URL }}"
     assert "NOTIFY_FAILED_CHANNELS" in notify_step["run"]
     assert "failed_channels" in notify_step["run"]
     assert build["outputs"]["notify_failed_channels"] == "${{ steps.notify.outputs.NOTIFY_FAILED_CHANNELS }}"
 
-    for s in build["steps"]:
-        run = s.get("run") or ""
-        assert "$ECO_EVENTS_SLACK_WEBHOOK_URL" not in run
-        assert "secrets.ECO_EVENTS_SLACK_WEBHOOK_URL" not in run
-
     fail = next(s for s in wf["jobs"]["deploy"]["steps"] if s.get("name") == "Fail if notify failed")
     assert fail["env"]["FAILED_CHANNELS"] == "${{ needs.build.outputs.notify_failed_channels }}"
-    assert "FAILED_CHANNELS" in fail["run"] and "Discord notification failed" not in fail["run"]
-    # The Slack secret is never exposed to the Pages deploy job.
-    assert "ECO_EVENTS_SLACK_WEBHOOK_URL" not in json.dumps(wf["jobs"]["deploy"])
+    assert "FAILED_CHANNELS" in fail["run"]
