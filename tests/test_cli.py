@@ -208,7 +208,7 @@ def test_notify_sender_fails(runner, monkeypatch):
     def failing_sender(content):
         raise gu_eco_events.notify.NotifyError("Simulated failure")
         
-    with patch.dict(os.environ, {"DISCORD_WEBHOOK_URL": "https://discord.com/api/webhooks/123/abc"}), \
+    with patch.dict(os.environ, {"ECO_EVENTS_DISCORD_WEBHOOK_URL": "https://discord.com/api/webhooks/123/abc"}), \
          patch("gu_eco_events.notify.discord_sender", return_value=failing_sender):
          
         code, lines, _ = runner.run("notify/base", mode="send")
@@ -236,7 +236,7 @@ def test_notify_partial_send_connection_reset_keeps_sent_markers(runner, monkeyp
             raise ConnectionResetError(54, "Connection reset by peer")
         delivered.append(content)
 
-    with patch.dict(os.environ, {"DISCORD_WEBHOOK_URL": "https://discord.com/api/webhooks/123/abc"}), \
+    with patch.dict(os.environ, {"ECO_EVENTS_DISCORD_WEBHOOK_URL": "https://discord.com/api/webhooks/123/abc"}), \
          patch("gu_eco_events.notify.discord_sender", return_value=flaky_sender):
         code, lines, captured = runner.run("baseline", mode="send")
     assert code == 4
@@ -251,7 +251,7 @@ def test_notify_partial_send_connection_reset_keeps_sent_markers(runner, monkeyp
 
     # Next run delivers only the remainder, never the first message again.
     resent = []
-    with patch.dict(os.environ, {"DISCORD_WEBHOOK_URL": "https://discord.com/api/webhooks/123/abc"}), \
+    with patch.dict(os.environ, {"ECO_EVENTS_DISCORD_WEBHOOK_URL": "https://discord.com/api/webhooks/123/abc"}), \
          patch("gu_eco_events.notify.discord_sender", return_value=resent.append):
         code2, lines2, _ = runner.run("baseline", mode="send")
     assert code2 == 0

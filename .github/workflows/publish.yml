@@ -38,13 +38,13 @@ jobs:
           
       - name: Leak check
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: python -m gu_eco_events check-leaks --tracked --env DISCORD_WEBHOOK_URL public data
+          ECO_EVENTS_DISCORD_WEBHOOK_URL: ${{ secrets.ECO_EVENTS_DISCORD_WEBHOOK_URL }}
+        run: python -m gu_eco_events check-leaks --tracked --env ECO_EVENTS_DISCORD_WEBHOOK_URL public data
           
       - name: Run pipeline notify
         id: notify
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          ECO_EVENTS_DISCORD_WEBHOOK_URL: ${{ secrets.ECO_EVENTS_DISCORD_WEBHOOK_URL }}
         run: |
           set +e
           python -m gu_eco_events notify --events public/events.json --state data/state.json --mode send

@@ -34,8 +34,8 @@ def test_publish_workflow():
     # check secret is not echoed (can't fully verify, but we can check run commands)
     for s in build["steps"]:
         if s.get("run"):
-            assert "echo $DISCORD_WEBHOOK_URL" not in s["run"]
-            assert "echo ${{ secrets.DISCORD_WEBHOOK_URL }}" not in s["run"]
+            assert "echo $ECO_EVENTS_DISCORD_WEBHOOK_URL" not in s["run"]
+            assert "echo ${{ secrets.ECO_EVENTS_DISCORD_WEBHOOK_URL }}" not in s["run"]
             
     # Deploy job
     deploy = jobs["deploy"]

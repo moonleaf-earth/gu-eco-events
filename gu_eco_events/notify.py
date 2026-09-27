@@ -22,7 +22,7 @@ from typing import Callable
 from .config import TZ
 from .model import Event
 
-WEBHOOK_ENV = "DISCORD_WEBHOOK_URL"
+WEBHOOK_ENV = "ECO_EVENTS_DISCORD_WEBHOOK_URL"
 _WEBHOOK_RE = re.compile(r"^https://(discord\.com|discordapp\.com|ptb\.discord\.com|canary\.discord\.com)/api/webhooks/\d+/[\w-]+$")
 
 WEEKDAYS = ["mån", "tis", "ons", "tors", "fre", "lör", "sön"]
