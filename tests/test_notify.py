@@ -131,25 +131,23 @@ def test_notify_routing_rules():
 
     messages = plan(events, state, today)
 
-    # 1 Discord (req_free), 1 Discord + 1 Slack (req_paid), 1 Discord (unknown)
-    assert len(messages) == 4
-    channels_by_uid = {}
-    for m in messages:
-        channels_by_uid.setdefault(m.uid, []).append(m.channel)
+    # 1 Discord (req_free), 1 Discord (req_paid), 1 Discord (unknown)
+    assert len(messages) == 3
+    uids = {m.uid: m for m in messages}
 
-    assert "discord" in channels_by_uid["1"]
-    assert "slack" not in channels_by_uid.get("1", [])
+    assert "1" in uids
+    assert "Kostnad:" not in uids["1"].content
 
-    assert "discord" in channels_by_uid["2"]
-    assert "slack" in channels_by_uid["2"]
+    assert "2" in uids
+    assert "Kostnad: 100 kr" in uids["2"].content
 
-    assert "3" not in channels_by_uid
-    assert "4" not in channels_by_uid
+    assert "3" not in uids
+    assert "4" not in uids
 
-    assert "discord" in channels_by_uid["5"]
-    assert "slack" not in channels_by_uid.get("5", [])
+    assert "5" in uids
+    assert "Kostnad:" not in uids["5"].content
 
-def test_slack_notified_independently():
+def test_discord_cost_added_update():
     from datetime import date
     from gu_eco_events.notify import plan
     from gu_eco_events.model import Event
@@ -160,7 +158,7 @@ def test_slack_notified_independently():
         registration_deadline=None, description="", last_modified=None, source_id="", categories=()
     )
 
-    # Already discord notified, not slack
+    # Previously notified without cost
     state = {
         "events": {
             "1": {
@@ -172,10 +170,11 @@ def test_slack_notified_independently():
 
     messages = plan([e], state, today)
     assert len(messages) == 1
-    assert messages[0].channel == "slack"
-    assert messages[0].kind == "new"
+    assert messages[0].channel == "discord"
+    assert messages[0].kind == "update"
+    assert "Kostnad: 100 kr" in messages[0].content
 
-def test_slack_cost_update():
+def test_discord_cost_changed_update():
     from datetime import date
     from gu_eco_events.notify import plan
     from gu_eco_events.model import Event
@@ -186,12 +185,11 @@ def test_slack_cost_update():
         registration_deadline=None, description="", last_modified=None, source_id="", categories=()
     )
 
-    # Notified with old hash
+    # Notified with old paid cost
     state = {
         "events": {
             "1": {
-                "slack_notified_hash": "old_hash",
-                "notified_hash": e.material_hash() # discord is up to date
+                "notified_hash": "old_hash"
             }
         }
     }
@@ -199,5 +197,6 @@ def test_slack_cost_update():
 
     messages = plan([e], state, today)
     assert len(messages) == 1
-    assert messages[0].channel == "slack"
+    assert messages[0].channel == "discord"
     assert messages[0].kind == "update"
+    assert "Kostnad: 200 kr" in messages[0].content

@@ -105,9 +105,8 @@ class Event:
         payload = [self.title, self.all_day, self.start, self.end, self.location]
         return _hash(payload)
 
-    def paid_hash(self) -> str:
-        """Hash for the paid-event (Slack) notice: material fields plus cost,
-        so a corrected price produces exactly one update."""
+    def material_hash_with_cost(self) -> str:
+        """Hash including cost, so a corrected price produces exactly one update."""
         return _hash([self.title, self.all_day, self.start, self.end, self.location, self.cost])
 
     def content_hash(self) -> str:

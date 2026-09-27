@@ -1,8 +1,7 @@
 """Durable JSON state projection (committed as data/state.json).
 
 Per UID: last event snapshot, material/content hash, and independent Discord
-(`notified_hash`, `cancellation_notified`) and Slack (`slack_notified_hash`,
-`slack_cancellation_notified`) notification markers.
+(`notified_hash`, `cancellation_notified`) notification markers.
 Plus `last_success` counts used by the severe-drop guard. Contains no
 secrets and nothing that is not already public on gu.se.
 """
@@ -72,9 +71,6 @@ def update_snapshot(state: dict, events: list[Event], today: date, counts: dict)
             entry["seen_active"] = True
         entry.setdefault("notified_hash", None)
         entry.setdefault("cancellation_notified", False)
-        # Slack (paid events) markers, added additively; older state lacks them.
-        entry.setdefault("slack_notified_hash", None)
-        entry.setdefault("slack_cancellation_notified", False)
     cutoff = today - timedelta(days=config.STATE_RETENTION_DAYS)
     for uid in list(evs):
         ev = evs[uid].get("event")

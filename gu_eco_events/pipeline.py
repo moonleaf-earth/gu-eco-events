@@ -148,8 +148,8 @@ def report(result: BuildResult) -> None:
 # --- notification step -----------------------------------------------------
 
 MODES = ("dry-run", "send", "record-only")
-CHANNELS = ("discord", "slack")
-SEND_DELAY_SECONDS = 1.0  # stay well under Discord/Slack webhook rate limits
+CHANNELS = ("discord",)
+SEND_DELAY_SECONDS = 1.0  # stay well under Discord webhook rate limits
 
 
 def _senders_from_env(channels: set[str]) -> dict:
@@ -158,7 +158,6 @@ def _senders_from_env(channels: set[str]) -> dict:
     senders = {}
     for channel, from_env, make in (
         ("discord", notify.webhook_from_env, notify.discord_sender),
-        ("slack", notify.slack_webhook_from_env, notify.slack_sender),
     ):
         if channel not in channels:
             continue
@@ -174,10 +173,8 @@ def run_notify(events: list[Event], counts: dict, state_path: str | Path, today:
     """Plan against prior state, deliver per mode, persist state.
 
     dry-run:     print plan, record messages as sent (scratch/ops testing)
-    send:        deliver via each channel's webhook; record each only after
-                 success. A channel without a (valid) secret keeps its notices
-                 pending. A delivery failure stops only that channel; the
-                 other channel keeps delivering.
+    send:        deliver via webhook; record only after success. Without a
+                 (valid) secret, notices are left pending.
     record-only: no delivery, markers untouched (used when no secret is set,
                  so installing the secret later still announces events)
     """
