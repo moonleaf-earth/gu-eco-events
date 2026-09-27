@@ -28,7 +28,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "559be37e063e9810",
       "notified_hash": null,
       "seen_active": true
@@ -61,7 +61,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "fe37c11b8474b20e",
       "notified_hash": null,
       "seen_active": true
@@ -94,7 +94,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "33245d7cd037a2cb",
       "notified_hash": null,
       "seen_active": true
@@ -127,7 +127,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "1f8dc0d7b2d8f725",
       "notified_hash": null,
       "seen_active": true
@@ -160,7 +160,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "3e25892a4bd1472d",
       "notified_hash": null,
       "seen_active": true
@@ -191,7 +191,7 @@
         "url": "https://www.gu.se/evenemang/vem-bar-valfarden-vid-en-kris-perspektiv-pa-genus-och-resiliens"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "08f39cd26c011ec8",
       "notified_hash": null,
       "seen_active": true
@@ -222,7 +222,7 @@
         "url": "https://www.gu.se/evenemang/webbinarium-om-tjara-med-nordic-tar-network-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "5a0d7ee9f2842a4b",
       "notified_hash": null,
       "seen_active": true
@@ -253,7 +253,7 @@
         "url": "https://www.gu.se/evenemang/webbinarium-om-tjara-med-nordic-tar-network-2026-0"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "e4063a76ae9daebc",
       "notified_hash": null,
       "seen_active": true
@@ -284,9 +284,9 @@
         "url": "https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "463452d63346c500",
-      "notified_hash": null,
+      "notified_hash": "463452d63346c500",
       "seen_active": true
     },
     "gu-node-190572-2@gu-eco-events.moonleaf-earth.github.io": {
@@ -315,9 +315,9 @@
         "url": "https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "3cef8dbbc4568eae",
-      "notified_hash": null,
+      "notified_hash": "3cef8dbbc4568eae",
       "seen_active": true
     },
     "gu-node-190572-3@gu-eco-events.moonleaf-earth.github.io": {
@@ -346,9 +346,9 @@
         "url": "https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "6cb20f6a19f98d4b",
-      "notified_hash": null,
+      "notified_hash": "6cb20f6a19f98d4b",
       "seen_active": true
     },
     "gu-node-191400-1@gu-eco-events.moonleaf-earth.github.io": {
@@ -376,9 +376,9 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "bba4c9a085be75f6",
-      "notified_hash": null,
+      "notified_hash": "bba4c9a085be75f6",
       "seen_active": true
     },
     "gu-node-191400-2@gu-eco-events.moonleaf-earth.github.io": {
@@ -406,9 +406,9 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "3ca38a5d7f595593",
-      "notified_hash": null,
+      "notified_hash": "3ca38a5d7f595593",
       "seen_active": true
     },
     "gu-node-192048-1@gu-eco-events.moonleaf-earth.github.io": {
@@ -437,9 +437,9 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "b2789f90803d4b28",
-      "notified_hash": null,
+      "notified_hash": "b2789f90803d4b28",
       "seen_active": true
     },
     "gu-node-192048-2@gu-eco-events.moonleaf-earth.github.io": {
@@ -468,9 +468,9 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "a4d87773915b413c",
-      "notified_hash": null,
+      "notified_hash": "a4d87773915b413c",
       "seen_active": true
     },
     "gu-node-193892-1@gu-eco-events.moonleaf-earth.github.io": {
@@ -498,7 +498,7 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-oljan-det-svarta-guldet"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "1f6209cdfdabfa7c",
       "notified_hash": null,
       "seen_active": true
@@ -528,7 +528,7 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-marknaden-osynlig-hand-eller-jarngrepp"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "8e9a2c88efc237c7",
       "notified_hash": null,
       "seen_active": true
@@ -558,7 +558,7 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "e8e852be56b5c73c",
       "notified_hash": null,
       "seen_active": true
@@ -588,7 +588,7 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "9f2d0c1b79431dd8",
       "notified_hash": null,
       "seen_active": true
@@ -619,7 +619,7 @@
         "url": "https://www.gu.se/evenemang/qogceps-lunchseminarium-med-nils-droste"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "f8c77820e24111e3",
       "notified_hash": null,
       "seen_active": true
@@ -649,7 +649,7 @@
         "url": "https://www.gu.se/evenemang/refuseal-disposability-the-waste-commons-and-infrastructural-life-in-dakar"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "fb16f129184fe26e",
       "notified_hash": null,
       "seen_active": true
@@ -679,7 +679,7 @@
         "url": "https://www.gu.se/evenemang/carbon-purgatory-the-long-death-of-oil-and-gas"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "d2ec6e1694daaa3b",
       "notified_hash": null,
       "seen_active": true
@@ -712,7 +712,7 @@
         "url": "https://www.gu.se/evenemang/skrattet-som-bildning"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "a33cfb44873efee1",
       "notified_hash": null,
       "seen_active": true
@@ -744,7 +744,7 @@
         "url": "https://www.gu.se/evenemang/kulturens-varde-i-en-tid-som-tappat-sitt-omdome"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "fd7afb094aa2cd51",
       "notified_hash": null,
       "seen_active": true
@@ -839,7 +839,7 @@
         "url": "https://www.gu.se/evenemang/disputation-marcus-brogeby"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "2f5108e3fb6510e3",
       "notified_hash": null,
       "seen_active": true
@@ -874,7 +874,7 @@
         "url": "https://www.gu.se/evenemang/kasta-ankare-i-arkivet-forskning-utbildning-i-en-foranderlig-kunskapsvarld"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-26",
+      "last_seen": "2026-09-27",
       "material_hash": "df85453e8f46382f",
       "notified_hash": null,
       "seen_active": true
@@ -914,10 +914,10 @@
     }
   },
   "last_success": {
-    "date": "2026-09-26",
-    "event_count": 29,
-    "parsed_count": 39,
-    "source_total_hits": 39
+    "date": "2026-09-27",
+    "event_count": 26,
+    "parsed_count": 35,
+    "source_total_hits": 35
   },
   "schema": 1
 }
