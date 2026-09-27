@@ -17,6 +17,7 @@ jobs:
       contents: write
     outputs:
       notify_failed: ${{ steps.notify.outputs.NOTIFY_FAILED }}
+      notify_failed_channels: ${{ steps.notify.outputs.NOTIFY_FAILED_CHANNELS }}
     steps:
       - uses: actions/checkout@v4
       
@@ -49,11 +50,17 @@ jobs:
           ECO_EVENTS_SLACK_WEBHOOK_URL: ${{ secrets.ECO_EVENTS_SLACK_WEBHOOK_URL }}
         run: |
           set +e
-          python -m gu_eco_events notify --events public/events.json --state data/state.json --mode send
-          code=$?
+          python -m gu_eco_events notify --events public/events.json --state data/state.json --mode send | tee "$RUNNER_TEMP/notify.log"
+          code=${PIPESTATUS[0]}
           set -e
           if [ $code -ne 0 ] && [ $code -ne 4 ]; then exit $code; fi
-          if [ $code -eq 4 ]; then echo "NOTIFY_FAILED=1" >> $GITHUB_OUTPUT; fi
+          if [ $code -eq 4 ]; then
+            # Channel names only (from the summary line); never webhook values.
+            failed=$(python -c 'import json,sys; print(",".join([d for d in (json.loads(l) for l in open(sys.argv[1]) if l.startswith("{")) if "failed_channels" in d][-1]["failed_channels"]))' "$RUNNER_TEMP/notify.log")
+            echo "NOTIFY_FAILED=1" >> $GITHUB_OUTPUT
+            echo "NOTIFY_FAILED_CHANNELS=$failed" >> $GITHUB_OUTPUT
+            echo "Notification delivery failed for: $failed (other channels delivered; undelivered notices stay pending)." >> $GITHUB_STEP_SUMMARY
+          fi
           
       - name: Commit state
         run: |
@@ -84,6 +91,8 @@ jobs:
         
       - name: Fail if notify failed
         if: needs.build.outputs.notify_failed == '1'
+        env:
+          FAILED_CHANNELS: ${{ needs.build.outputs.notify_failed_channels }}
         run: |
-          echo "Discord notification failed, but state and feed are published."
+          echo "Notification delivery failed for: ${FAILED_CHANNELS:-unknown channel}. State and feed are published; undelivered notices stay pending for the next run."
           exit 1
