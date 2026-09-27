@@ -2,7 +2,7 @@
   "events": {
     "gu-node-161403-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "54a8fe146d4963cb",
+      "content_hash": "280ad7d5b261bf8f",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -13,6 +13,7 @@
           "Student",
           "Utbildning & lärande"
         ],
+        "cost": null,
         "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
         "end": "2026-10-06T16:15:00+02:00",
         "last_modified": "2026-09-24",
@@ -28,14 +29,14 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "559be37e063e9810",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-161403-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "041b14c0b84b8f1a",
+      "content_hash": "a788e380294236d4",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -46,6 +47,7 @@
           "Student",
           "Utbildning & lärande"
         ],
+        "cost": null,
         "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
         "end": "2026-10-27T16:15:00+01:00",
         "last_modified": "2026-09-24",
@@ -61,14 +63,14 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "fe37c11b8474b20e",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-161403-3@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "dbdc8914c2359650",
+      "content_hash": "0291c29dbc628e29",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -79,6 +81,7 @@
           "Student",
           "Utbildning & lärande"
         ],
+        "cost": null,
         "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
         "end": "2026-11-10T16:15:00+01:00",
         "last_modified": "2026-09-24",
@@ -94,14 +97,14 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "33245d7cd037a2cb",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-161403-4@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "3e626df81cdc977e",
+      "content_hash": "65c38a57cae59c1f",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -112,6 +115,7 @@
           "Student",
           "Utbildning & lärande"
         ],
+        "cost": null,
         "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
         "end": "2026-12-01T16:15:00+01:00",
         "last_modified": "2026-09-24",
@@ -127,14 +131,14 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "1f8dc0d7b2d8f725",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-161403-5@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "1a49d9fac00992a9",
+      "content_hash": "fa516271306c1811",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -145,6 +149,7 @@
           "Student",
           "Utbildning & lärande"
         ],
+        "cost": null,
         "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
         "end": "2026-12-08T16:15:00+01:00",
         "last_modified": "2026-09-24",
@@ -160,14 +165,14 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "3e25892a4bd1472d",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-188048-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "0b08d657f609600b",
+      "content_hash": "738aade631c15145",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -176,6 +181,7 @@
           "Hållbarhet & miljö",
           "Samhälle & ekonomi"
         ],
+        "cost": null,
         "description": "Hur påverkar kön och makt vår beredskap inför kriser – och vad betyder det för välfärdens förmåga att hålla? Nationella sekretariatet för genusforskning delar med sig av kunskap som sätter fokus på samspelet mellan resiliens, genus och jämställdhet i tider av samhällspåfrestningar.\n\nKälla: https://www.gu.se/evenemang/vem-bar-valfarden-vid-en-kris-perspektiv-pa-genus-och-resiliens",
         "end": "2026-10-22T12:00:00+02:00",
         "last_modified": "2026-04-29",
@@ -191,14 +197,14 @@
         "url": "https://www.gu.se/evenemang/vem-bar-valfarden-vid-en-kris-perspektiv-pa-genus-och-resiliens"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "08f39cd26c011ec8",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-189021-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "beabb019c89f423e",
+      "content_hash": "68a310bf5addccc4",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -207,6 +213,7 @@
           "Kultur & språk",
           "Naturvetenskap & IT"
         ],
+        "cost": null,
         "description": "Save the date! Nordic Tar Network bjuder in till webinarium om tjära den 5 oktober.\n\nKälla: https://www.gu.se/evenemang/webbinarium-om-tjara-med-nordic-tar-network-2026",
         "end": "2026-10-05T12:00:00+02:00",
         "last_modified": "2026-09-17",
@@ -222,14 +229,14 @@
         "url": "https://www.gu.se/evenemang/webbinarium-om-tjara-med-nordic-tar-network-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "5a0d7ee9f2842a4b",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-189024-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "20559943b3bee388",
+      "content_hash": "622a9fbcb5b2ad2f",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -238,6 +245,7 @@
           "Kultur & språk",
           "Naturvetenskap & IT"
         ],
+        "cost": null,
         "description": "Save the date! Nordic Tar Network bjuder in till webinarium om tjära den 23 november. Webinariet hålls på engelska.\n\nKälla: https://www.gu.se/evenemang/webbinarium-om-tjara-med-nordic-tar-network-2026-0",
         "end": "2026-11-23T12:00:00+01:00",
         "last_modified": "2026-05-11",
@@ -253,14 +261,14 @@
         "url": "https://www.gu.se/evenemang/webbinarium-om-tjara-med-nordic-tar-network-2026-0"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "e4063a76ae9daebc",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-190572-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "fca50353c5a86445",
+      "content_hash": "f96b0504cb818fdd",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -269,6 +277,7 @@
           "Naturvetenskap & IT",
           "Utbildning & lärande"
         ],
+        "cost": "950 kr plus moms",
         "description": "Film är enkelt och billigt att producera och ett effektivt sätt för hantverkare att sprida kunskap och marknadsföra sin kompetens i sociala medier. Därför planerar Hantverkslaboratoriet en tredelad webbinariumskurs i filmproduktion för yrkesverksamma hantverkare.\n\nAnmälan krävs (sista anmälningsdag 2026-09-30): https://forms.office.com/e/Kq2ANGXDbJ\n\nKälla: https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form",
         "end": "2026-10-06T16:30:00+02:00",
         "last_modified": "2026-09-11",
@@ -284,14 +293,14 @@
         "url": "https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "463452d63346c500",
-      "notified_hash": "463452d63346c500",
+      "notified_hash": "e0848108937c67f4",
       "seen_active": true
     },
     "gu-node-190572-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "fbc24588a271ce47",
+      "content_hash": "12404c340e18a703",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -300,6 +309,7 @@
           "Naturvetenskap & IT",
           "Utbildning & lärande"
         ],
+        "cost": "950 kr plus moms",
         "description": "Film är enkelt och billigt att producera och ett effektivt sätt för hantverkare att sprida kunskap och marknadsföra sin kompetens i sociala medier. Därför planerar Hantverkslaboratoriet en tredelad webbinariumskurs i filmproduktion för yrkesverksamma hantverkare.\n\nAnmälan krävs (sista anmälningsdag 2026-09-30): https://forms.office.com/e/Kq2ANGXDbJ\n\nKälla: https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form",
         "end": "2026-10-13T16:30:00+02:00",
         "last_modified": "2026-09-11",
@@ -315,14 +325,14 @@
         "url": "https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "3cef8dbbc4568eae",
-      "notified_hash": "3cef8dbbc4568eae",
+      "notified_hash": "9d1e21e51dd34394",
       "seen_active": true
     },
     "gu-node-190572-3@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "89b3e1639092c8d9",
+      "content_hash": "ea51abc7ec9feb38",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -331,6 +341,7 @@
           "Naturvetenskap & IT",
           "Utbildning & lärande"
         ],
+        "cost": "950 kr plus moms",
         "description": "Film är enkelt och billigt att producera och ett effektivt sätt för hantverkare att sprida kunskap och marknadsföra sin kompetens i sociala medier. Därför planerar Hantverkslaboratoriet en tredelad webbinariumskurs i filmproduktion för yrkesverksamma hantverkare.\n\nAnmälan krävs (sista anmälningsdag 2026-09-30): https://forms.office.com/e/Kq2ANGXDbJ\n\nKälla: https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form",
         "end": "2026-10-20T16:30:00+02:00",
         "last_modified": "2026-09-11",
@@ -346,14 +357,14 @@
         "url": "https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "6cb20f6a19f98d4b",
-      "notified_hash": "6cb20f6a19f98d4b",
+      "notified_hash": "dfa95f2b4b16d6a9",
       "seen_active": true
     },
     "gu-node-191400-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "16c81310ad19f4cd",
+      "content_hash": "8f06f08f8881fc62",
       "event": {
         "all_day": true,
         "cancelled": false,
@@ -361,6 +372,7 @@
           "Hållbarhet & miljö",
           "Naturvetenskap & IT"
         ],
+        "cost": "Free of charge.",
         "description": "Welcome to the Forum for the Arctic and Antarctic 2026 - Building on a Swedish foundation for the 5th International Polar Year! The event is hosted by the University of Gothenburg 30 November - 1 December. Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year.\n\nAnmälan krävs: https://www.trippus.net/Registration_Delegate\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
         "end": "2026-12-01",
         "last_modified": "2026-09-18",
@@ -376,14 +388,14 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "bba4c9a085be75f6",
       "notified_hash": "bba4c9a085be75f6",
       "seen_active": true
     },
     "gu-node-191400-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "3fff535ed77e7198",
+      "content_hash": "363ddb26870c0c98",
       "event": {
         "all_day": true,
         "cancelled": false,
@@ -391,6 +403,7 @@
           "Hållbarhet & miljö",
           "Naturvetenskap & IT"
         ],
+        "cost": "Free of charge.",
         "description": "Welcome to the Forum for the Arctic and Antarctic 2026 - Building on a Swedish foundation for the 5th International Polar Year! The event is hosted by the University of Gothenburg 30 November - 1 December. Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year.\n\nAnmälan krävs: https://www.trippus.net/Registration_Delegate\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
         "end": "2026-12-02",
         "last_modified": "2026-09-18",
@@ -406,14 +419,14 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "3ca38a5d7f595593",
       "notified_hash": "3ca38a5d7f595593",
       "seen_active": true
     },
     "gu-node-192048-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "8c69f8ffe6b63044",
+      "content_hash": "9e86e27c2955b199",
       "event": {
         "all_day": true,
         "cancelled": false,
@@ -422,6 +435,7 @@
           "Naturvetenskap & IT",
           "Samhälle & ekonomi"
         ],
+        "cost": null,
         "description": "Welcome to a lunch to lunch workshop that bring together researchers working on biodiversity, ecosystem change, chemical pollution, environmental risk, monitoring, governance and related fields. The workshop will stimulate discussion and mutual learning around chemical pollution as a driver of biodiversity change, identify possible areas of overlap across research environments and disciplines, and explore future activities that may emerge from the discussions.\n\nAnmälan krävs (sista anmälningsdag 2026-10-23): https://forms.cloud.microsoft/pages/responsepage.aspx?id=Me2YB7D1NUmGPHPuJQWAbjd-1MiFi9VAmUX7t39TbUdURU9BTUxDMEVVTFBMRFJPQ1NQWjgxMlZXNS4u&route=shorturl\n\nKälla: https://www.gu.se/evenemang/chemical-pollution-and-biodiversity",
         "end": "2026-11-24",
         "last_modified": "2026-09-17",
@@ -437,14 +451,14 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "b2789f90803d4b28",
       "notified_hash": "b2789f90803d4b28",
       "seen_active": true
     },
     "gu-node-192048-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "f5f93fac5f688763",
+      "content_hash": "72d3990cc1953719",
       "event": {
         "all_day": true,
         "cancelled": false,
@@ -453,6 +467,7 @@
           "Naturvetenskap & IT",
           "Samhälle & ekonomi"
         ],
+        "cost": null,
         "description": "Welcome to a lunch to lunch workshop that bring together researchers working on biodiversity, ecosystem change, chemical pollution, environmental risk, monitoring, governance and related fields. The workshop will stimulate discussion and mutual learning around chemical pollution as a driver of biodiversity change, identify possible areas of overlap across research environments and disciplines, and explore future activities that may emerge from the discussions.\n\nAnmälan krävs (sista anmälningsdag 2026-10-23): https://forms.cloud.microsoft/pages/responsepage.aspx?id=Me2YB7D1NUmGPHPuJQWAbjd-1MiFi9VAmUX7t39TbUdURU9BTUxDMEVVTFBMRFJPQ1NQWjgxMlZXNS4u&route=shorturl\n\nKälla: https://www.gu.se/evenemang/chemical-pollution-and-biodiversity",
         "end": "2026-11-25",
         "last_modified": "2026-09-17",
@@ -468,14 +483,14 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "a4d87773915b413c",
       "notified_hash": "a4d87773915b413c",
       "seen_active": true
     },
     "gu-node-193892-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "c1d37bc99455a535",
+      "content_hash": "719c620a1383e259",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -483,6 +498,7 @@
           "Hållbarhet & miljö",
           "Samhälle & ekonomi"
         ],
+        "cost": null,
         "description": "Forskare i samtal om människans drömmar och mardrömmar om en bättre värld\n\nKälla: https://www.gu.se/evenemang/utopi-och-dystopi-oljan-det-svarta-guldet",
         "end": "2026-11-03T19:30:00+01:00",
         "last_modified": "2026-09-15",
@@ -498,14 +514,14 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-oljan-det-svarta-guldet"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "1f6209cdfdabfa7c",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-193919-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "ee7253648a8e9ecf",
+      "content_hash": "793e4bd0d175d79c",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -513,6 +529,7 @@
           "Hållbarhet & miljö",
           "Samhälle & ekonomi"
         ],
+        "cost": null,
         "description": "Forskarsamtal om den fria marknaden på Hagateatern\n\nKälla: https://www.gu.se/evenemang/utopi-och-dystopi-marknaden-osynlig-hand-eller-jarngrepp",
         "end": "2026-12-01T19:30:00+01:00",
         "last_modified": "2026-09-21",
@@ -528,14 +545,14 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-marknaden-osynlig-hand-eller-jarngrepp"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "8e9a2c88efc237c7",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-194563-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "4862864ce8771307",
+      "content_hash": "e74c1c07693ccc0d",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -543,6 +560,7 @@
           "Hållbarhet & miljö",
           "Samhälle & ekonomi"
         ],
+        "cost": null,
         "description": "Hösten 2026 lanserar forskningsprogrammet i samhällsvetenskapliga miljöstudier vid Institutionen för globala studier en ny dokumentärserie som belyser aktuella samhälls- och miljöfrågor genom film och efterföljande samtal. Visningarna är öppna för studenter, medarbetare och allmänheten.\n\nKälla: https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa",
         "end": "2026-11-11T19:00:00+01:00",
         "last_modified": "2026-08-31",
@@ -558,14 +576,14 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "e8e852be56b5c73c",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-194563-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "3ecd8a3a391f3d21",
+      "content_hash": "c9277479beee32b5",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -573,6 +591,7 @@
           "Hållbarhet & miljö",
           "Samhälle & ekonomi"
         ],
+        "cost": null,
         "description": "Hösten 2026 lanserar forskningsprogrammet i samhällsvetenskapliga miljöstudier vid Institutionen för globala studier en ny dokumentärserie som belyser aktuella samhälls- och miljöfrågor genom film och efterföljande samtal. Visningarna är öppna för studenter, medarbetare och allmänheten.\n\nKälla: https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa",
         "end": "2026-11-25T19:00:00+01:00",
         "last_modified": "2026-08-31",
@@ -588,14 +607,14 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "9f2d0c1b79431dd8",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-194798-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "69f661a1acc78deb",
+      "content_hash": "57adb55b82720480",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -604,6 +623,7 @@
           "Hållbarhet & miljö",
           "Samhälle & ekonomi"
         ],
+        "cost": null,
         "description": "Titel annonseras inom kort.\n\nKälla: https://www.gu.se/evenemang/qogceps-lunchseminarium-med-nils-droste",
         "end": "2026-11-18T13:00:00+01:00",
         "last_modified": "2026-08-21",
@@ -619,14 +639,14 @@
         "url": "https://www.gu.se/evenemang/qogceps-lunchseminarium-med-nils-droste"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "f8c77820e24111e3",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-195911-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "647d5034b8ed1077",
+      "content_hash": "3f2b5440846b942e",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -634,6 +654,7 @@
           "Hållbarhet & miljö",
           "Samhälle & ekonomi"
         ],
+        "cost": null,
         "description": "Forskningsseminarium i samhällsvetenskapliga miljöstudier.\n\nKälla: https://www.gu.se/evenemang/refuseal-disposability-the-waste-commons-and-infrastructural-life-in-dakar",
         "end": "2026-11-12T12:00:00+01:00",
         "last_modified": "2026-08-31",
@@ -649,14 +670,14 @@
         "url": "https://www.gu.se/evenemang/refuseal-disposability-the-waste-commons-and-infrastructural-life-in-dakar"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "fb16f129184fe26e",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-195919-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "999b7e8fc1d6e466",
+      "content_hash": "a476f679e060dea6",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -664,6 +685,7 @@
           "Hållbarhet & miljö",
           "Samhälle & ekonomi"
         ],
+        "cost": null,
         "description": "Forskningsseminarium i samhällsvetenskapliga miljöstudier.\n\nKälla: https://www.gu.se/evenemang/carbon-purgatory-the-long-death-of-oil-and-gas",
         "end": "2026-11-26T12:00:00+01:00",
         "last_modified": "2026-08-31",
@@ -679,7 +701,7 @@
         "url": "https://www.gu.se/evenemang/carbon-purgatory-the-long-death-of-oil-and-gas"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "d2ec6e1694daaa3b",
       "notified_hash": null,
       "seen_active": true
@@ -719,7 +741,7 @@
     },
     "gu-node-196189-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "3786b2ccb203ceb5",
+      "content_hash": "ca7377da5644d5b6",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -729,6 +751,7 @@
           "Kultur & språk",
           "Samhälle & ekonomi"
         ],
+        "cost": "Entrébiljett till Bokmässan och till seminarium",
         "description": "En del av Folkbildningstema på Bokmässan 2026\n\nKälla: https://www.gu.se/evenemang/kulturens-varde-i-en-tid-som-tappat-sitt-omdome",
         "end": "2026-10-26T15:45:00+01:00",
         "last_modified": "2026-09-17",
@@ -744,7 +767,7 @@
         "url": "https://www.gu.se/evenemang/kulturens-varde-i-en-tid-som-tappat-sitt-omdome"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "fd7afb094aa2cd51",
       "notified_hash": null,
       "seen_active": true
@@ -816,7 +839,7 @@
     },
     "gu-node-196536-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "f3c80d693ac90b4b",
+      "content_hash": "0fba4ac6b18cbc41",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -824,6 +847,7 @@
           "Hållbarhet & miljö",
           "Samhälle & ekonomi"
         ],
+        "cost": null,
         "description": "Den 24 november försvarar Marcus Brogeby sin avhandling i företagsekonomi: Building on stable ground – How sustainability accounting employs boundary infrastructure\n\nKälla: https://www.gu.se/evenemang/disputation-marcus-brogeby",
         "end": "2026-11-24T15:00:00+01:00",
         "last_modified": "2026-09-03",
@@ -839,14 +863,14 @@
         "url": "https://www.gu.se/evenemang/disputation-marcus-brogeby"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "2f5108e3fb6510e3",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-197089-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "6086944ede3d7dd2",
+      "content_hash": "16b7280d62833ee4",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -859,6 +883,7 @@
           "Samhälle & ekonomi",
           "Utbildning & lärande"
         ],
+        "cost": null,
         "description": "Del II i serien ”När arkiven sjunger”\n\nKälla: https://www.gu.se/evenemang/kasta-ankare-i-arkivet-forskning-utbildning-i-en-foranderlig-kunskapsvarld",
         "end": "2026-11-11T17:00:00+01:00",
         "last_modified": "2026-09-11",
@@ -874,7 +899,7 @@
         "url": "https://www.gu.se/evenemang/kasta-ankare-i-arkivet-forskning-utbildning-i-en-foranderlig-kunskapsvarld"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-28",
       "material_hash": "df85453e8f46382f",
       "notified_hash": null,
       "seen_active": true
@@ -914,10 +939,10 @@
     }
   },
   "last_success": {
-    "date": "2026-09-27",
-    "event_count": 26,
-    "parsed_count": 35,
-    "source_total_hits": 35
+    "date": "2026-09-28",
+    "event_count": 25,
+    "parsed_count": 34,
+    "source_total_hits": 34
   },
   "schema": 1
 }
