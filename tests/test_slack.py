@@ -22,7 +22,10 @@ from gu_eco_events.notify import classify_cost, format_slack_message, mark_sent,
 from gu_eco_events.source.gu import parse_detail_page
 
 ROOT = Path(__file__).resolve().parents[1]
-COMMITTED_STATE = ROOT / "data" / "state.json"
+# Frozen copy of data/state.json as committed before cost/Slack existed. The
+# live file is rewritten by every workflow run, so tests must not pin it.
+COMMITTED_STATE = FIXTURES / "legacy-state" / "state.json"
+LIVE_STATE = ROOT / "data" / "state.json"
 DISCORD = "https://discord.com/api/webhooks/123/abc"
 # Built by concatenation so the tracked-file leak check never sees a URL.
 SLACK = "https://hooks.slack.com/services/" + "T000TEST/B000TEST/" + "notARealSecretValue0"
@@ -172,6 +175,13 @@ def test_committed_state_is_readable_through_update_snapshot():
     # Events absent from the current run go through Event.from_dict for expiry.
     new = state_mod.update_snapshot(json.loads(json.dumps(prior)), [], date(2027, 6, 1), {"parsed_count": 1})
     assert new["last_success"]["date"] == "2027-06-01"
+
+
+def test_live_state_is_readable():
+    # Contents-agnostic: whatever the workflow last committed must load and
+    # survive retention (which rebuilds every snapshot via Event.from_dict).
+    prior = state_mod.load(LIVE_STATE)
+    state_mod.update_snapshot(json.loads(json.dumps(prior)), [], date(2099, 1, 1), {"parsed_count": 1})
 
 
 def test_committed_state_run_notify_legacy_snapshots(runner):

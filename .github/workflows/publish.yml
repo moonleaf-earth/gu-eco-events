@@ -56,7 +56,7 @@ jobs:
           if [ $code -ne 0 ] && [ $code -ne 4 ]; then exit $code; fi
           if [ $code -eq 4 ]; then
             # Channel names only (from the summary line); never webhook values.
-            failed=$(python -c 'import json,sys; print(",".join([d for d in (json.loads(l) for l in open(sys.argv[1]) if l.startswith("{")) if "failed_channels" in d][-1]["failed_channels"]))' "$RUNNER_TEMP/notify.log")
+            failed=$(python -c 'import json,sys; print(",".join([d for d in (json.loads(l) for l in open(sys.argv[1]) if l.startswith("{")) if "failed_channels" in d][-1]["failed_channels"]))' "$RUNNER_TEMP/notify.log") || failed=unknown
             echo "NOTIFY_FAILED=1" >> $GITHUB_OUTPUT
             echo "NOTIFY_FAILED_CHANNELS=$failed" >> $GITHUB_OUTPUT
             echo "Notification delivery failed for: $failed (other channels delivered; undelivered notices stay pending)." >> $GITHUB_STEP_SUMMARY
