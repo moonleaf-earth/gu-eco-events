@@ -1,9 +1,12 @@
-"""Discord notification planning (pure) and delivery (webhook).
+"""Discord and Slack notification planning (pure) and delivery (webhooks).
 
-Only registration-required events that are new or materially changed
+Discord: registration-required events that are new or materially changed
 (title/time/place) are announced, plus one cancellation notice for an event
-previously seen active. Expired registration deadlines and past events are
-skipped. The webhook URL is read from the environment and never printed.
+previously seen active. Slack: the strict subset of those events whose
+structured GU cost is confidently non-free, tracked with its own markers and
+a hash that also covers the cost. Expired registration deadlines and past
+events are skipped. Webhook URLs are read from the environment and never
+printed.
 """
 
 from __future__ import annotations
@@ -45,16 +48,49 @@ class Message:
 
 
 
-_FREE_RE = re.compile(r"^(free|gratis|kostnadsfritt|kostnadsfri|0(\s*kr)?)$", re.IGNORECASE)
+# Cost classification works only on the structured `Kostnad`/`Cost` field;
+# body prose is never consulted.
+_FREE_WORDS_RE = re.compile(r"\b(free|gratis|kostnadsfri|kostnadsfritt|avgiftsfri|avgiftsfritt)\b", re.IGNORECASE)
+_FREE_ONLY_RE = re.compile(
+    r"^(free( of charge)?|gratis|kostnadsfri|kostnadsfritt|avgiftsfri|avgiftsfritt)[.!]?$", re.IGNORECASE
+)
+_CURRENCY = r"(kr\.?|kronor|sek|:-|,-|€|eur|euro|\$|usd|£|gbp)"
+_AMOUNT_RE = re.compile(r"\d+(?:[  ]\d{3})*(?:[.,]\d+)?")
+_ZERO_PRICE_RE = re.compile(
+    rf"^{_CURRENCY}?\s*0+(?:[.,]0+)?\s*{_CURRENCY}?\.?$", re.IGNORECASE
+)
+_PRICED_RE = re.compile(
+    rf"(\d[\d  .,]*\s*{_CURRENCY}|(?<![a-z]){_CURRENCY}\s*\d)", re.IGNORECASE
+)
+
+
+def classify_cost(cost: str | None) -> str:
+    """Return "free", "paid" or "unknown" for a structured cost value.
+
+    free:    an unambiguous free marker ("Free", "Gratis", "Kostnadsfritt",
+             ...) or a zero price ("0 kr", "0,00 SEK", "0:-").
+    paid:    a non-zero amount with a currency ("950 kr plus moms"), or a
+             bare non-zero number, and no free marker next to it.
+    unknown: missing, blank, or anything else (e.g. "Se hemsidan", or mixed
+             "Gratis för studenter, 200 kr för övriga"). Never paid.
+    """
+    text = " ".join((cost or "").split())
+    if not text:
+        return "unknown"
+    if _FREE_ONLY_RE.match(text) or _ZERO_PRICE_RE.match(text):
+        return "free"
+    if _FREE_WORDS_RE.search(text):
+        return "unknown"
+    if not (_PRICED_RE.search(text) or _AMOUNT_RE.fullmatch(text)):
+        return "unknown"
+    amounts = [float(a.replace(" ", "").replace(" ", "").replace(",", ".")) for a in _AMOUNT_RE.findall(text)]
+    if not any(amounts):
+        return "unknown"
+    return "paid"
+
 
 def is_paid(cost: str | None) -> bool:
-    if not cost or not cost.strip():
-        return False
-    if _FREE_RE.match(cost.strip()):
-        return False
-    if not any(c.isdigit() for c in cost):
-        return False
-    return True
+    return classify_cost(cost) == "paid"
 
 # --- formatting ------------------------------------------------------------
 
@@ -91,59 +127,82 @@ def format_message(kind: str, e: Event) -> str:
 
 
 
+def slack_escape(text: str) -> str:
+    """Slack's documented control-character escaping: scraped text can never
+    form `<!channel>`, `<!here>`, `<@U…>` or link syntax."""
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def _slack_link(url: str) -> str:
+    return "<" + slack_escape(url).replace("|", "%7C") + ">"
+
+
+SLACK_HEADINGS = {
+    "new": "Nytt avgiftsbelagt evenemang med anmälan",
+    "update": "Uppdaterat avgiftsbelagt evenemang (anmälan)",
+    "cancel": "INSTÄLLT avgiftsbelagt evenemang",
+}
+
+
 def format_slack_message(kind: str, e: Event) -> str:
-    lines = [f"**{HEADINGS[kind]} (Avgift):** {e.title}", f"Tid: {format_when(e)}", f"Plats: {e.location}", f"Kostnad: {e.cost}"]
+    esc = slack_escape
+    lines = [
+        f"*{SLACK_HEADINGS[kind]}:* {esc(e.title)}",
+        f"Tid: {format_when(e)}",
+        f"Plats: {esc(e.location)}",
+        f"Kostnad: {esc(e.cost or '')}",
+    ]
     if kind != "cancel":
         if e.registration_deadline:
             lines.append(f"Sista anmälningsdag: {_fmt_day(date.fromisoformat(e.registration_deadline))}")
-        lines.append(f"Anmälan: <{e.registration_url or e.url}>")
-    lines.append(f"Evenemang: <{e.url}>")
-    return "\n".join(lines)[:1900]
+        lines.append(f"Anmälan: {_slack_link(e.registration_url or e.url)}")
+    lines.append(f"Evenemang: {_slack_link(e.url)}")
+    return "\n".join(lines)[:3000]
+
+
 # --- planning --------------------------------------------------------------
 
+def _deadline_passed(e: Event, today: date) -> bool:
+    return bool(e.registration_deadline) and date.fromisoformat(e.registration_deadline) < today
+
+
 def plan(events: list[Event], state: dict, today: date) -> list[Message]:
+    """Discord notices first, then Slack notices; each channel is planned
+    against its own markers so one never suppresses the other."""
     seen = state.get("events", {})
-    out: list[Message] = []
+    discord: list[Message] = []
+    slack: list[Message] = []
     for e in events:
         prev = seen.get(e.uid) or {}
         if e.end_local_date() < today:
             continue
 
-        # Common checks
-        if e.registration_deadline and date.fromisoformat(e.registration_deadline) < today:
-            continue
-
-        # Discord
+        # Discord: unchanged rule (registration required).
         if e.cancelled:
             if prev.get("seen_active") and not prev.get("cancellation_notified"):
                 was_notified = prev.get("notified_hash") is not None
                 was_req = prev.get("event", {}).get("registration_required")
                 if was_notified or was_req:
-                    out.append(Message("discord", "cancel", e.uid, e.title, e.material_hash(), format_message("cancel", e)))
-        elif e.registration_required:
+                    discord.append(Message("discord", "cancel", e.uid, e.title, e.material_hash(), format_message("cancel", e)))
+        elif e.registration_required and not _deadline_passed(e, today):
             notified = prev.get("notified_hash")
-            if notified is None:
-                out.append(Message("discord", "new", e.uid, e.title, e.material_hash(), format_message("new", e)))
-            elif notified != e.material_hash():
-                out.append(Message("discord", "update", e.uid, e.title, e.material_hash(), format_message("update", e)))
+            kind = "new" if notified is None else "update" if notified != e.material_hash() else None
+            if kind:
+                discord.append(Message("discord", kind, e.uid, e.title, e.material_hash(), format_message(kind, e)))
 
-        # Slack
+        # Slack: registration required AND confidently paid.
         if e.cancelled:
-            if prev.get("seen_active") and not prev.get("slack_cancellation_notified"):
-                was_notified = prev.get("slack_notified_hash") is not None
-                was_req = prev.get("event", {}).get("registration_required")
-                # Need to know if it was paid previously to send a cancel to Slack?
-                # A cancellation is sent if it was previously notified.
-                if was_notified:
-                    out.append(Message("slack", "cancel", e.uid, e.title, e.material_hash(), format_slack_message("cancel", e)))
-        elif e.registration_required and is_paid(e.cost):
+            if (prev.get("seen_active") and prev.get("slack_notified_hash") is not None
+                    and not prev.get("slack_cancellation_notified")):
+                slack.append(Message("slack", "cancel", e.uid, e.title, e.paid_hash(), format_slack_message("cancel", e)))
+        elif e.registration_required and is_paid(e.cost) and not _deadline_passed(e, today):
             notified = prev.get("slack_notified_hash")
-            if notified is None:
-                out.append(Message("slack", "new", e.uid, e.title, e.material_hash(), format_slack_message("new", e)))
-            elif notified != e.material_hash():
-                out.append(Message("slack", "update", e.uid, e.title, e.material_hash(), format_slack_message("update", e)))
+            kind = "new" if notified is None else "update" if notified != e.paid_hash() else None
+            if kind:
+                slack.append(Message("slack", kind, e.uid, e.title, e.paid_hash(), format_slack_message(kind, e)))
 
-    return out
+    return discord + slack
+
 
 def mark_sent(state: dict, msg: Message) -> None:
     entry = state.setdefault("events", {}).setdefault(msg.uid, {})
@@ -216,7 +275,7 @@ def slack_webhook_from_env() -> str:
 
 def slack_sender(webhook_url: str) -> Callable[[str], None]:
     def send(content: str) -> None:
-        body = json.dumps({"text": content}).encode("utf-8")
+        body = json.dumps({"text": content, "unfurl_links": False, "unfurl_media": False}).encode("utf-8")
         req = urllib.request.Request(
             webhook_url,
             data=body,

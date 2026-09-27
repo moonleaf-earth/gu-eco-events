@@ -123,7 +123,7 @@ def main(argv: list[str] | None = None) -> int:
     _add_source(p)
     p.set_defaults(func=cmd_build)
 
-    p = sub.add_parser("notify", help="plan/send Discord notices from events.json and update state")
+    p = sub.add_parser("notify", help="plan/send Discord (registration) and Slack (paid registration) notices from events.json and update state")
     p.add_argument("--events", required=True)
     p.add_argument("--state", required=True)
     p.add_argument("--mode", choices=pipeline.MODES, required=True)
