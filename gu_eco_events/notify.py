@@ -86,6 +86,8 @@ def classify_cost(cost: str | None) -> str:
     amounts = [float(a.replace(" ", "").replace(" ", "").replace(",", ".")) for a in _AMOUNT_RE.findall(text)]
     if not any(amounts):
         return "unknown"
+    if any(a == 0.0 for a in amounts) and any(a != 0.0 for a in amounts):
+        return "unknown"
     return "paid"
 
 

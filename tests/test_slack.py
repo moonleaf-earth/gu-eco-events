@@ -145,6 +145,7 @@ def test_classify_paid(cost):
 @pytest.mark.parametrize("cost", [
     None, "", "   ", "Se hemsidan", "Enligt överenskommelse", "Gratis för studenter, 200 kr för övriga",
     "Free for members, 500 kr for others", "3 dagar", "Ingår i konferensavgiften",
+    "0 kr för studenter, 200 kr för övriga", "0 kr för medlemmar, 300 kr för övriga", "0-200 kr",
 ])
 def test_classify_missing_or_ambiguous_is_unknown(cost):
     assert classify_cost(cost) == "unknown"
