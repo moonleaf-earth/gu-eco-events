@@ -17,15 +17,15 @@ def test_check_leaks_finds_sentinel(tmp_path, runner):
     feed = runner.out / "eco-events.ics"
     feed.write_text(feed.read_text() + sentinel_url)
     
-    args = argparse.Namespace(tracked=False, env=["DISCORD_WEBHOOK_URL"], paths=[str(runner.out)])
+    args = argparse.Namespace(tracked=False, env=["ECO_EVENTS_DISCORD_WEBHOOK_URL"], paths=[str(runner.out)])
     
-    with patch.dict(os.environ, {"DISCORD_WEBHOOK_URL": "secret123"}):
+    with patch.dict(os.environ, {"ECO_EVENTS_DISCORD_WEBHOOK_URL": "secret123"}):
         assert cmd_check_leaks(args) == 1
 
 def test_run_with_sentinel_does_not_leak(runner):
     sentinel = "https://discord.com/api/webhooks/" + "99999/" + "test-sentinel-never-leak-this-string"
     
-    with patch.dict(os.environ, {"DISCORD_WEBHOOK_URL": sentinel}), \
+    with patch.dict(os.environ, {"ECO_EVENTS_DISCORD_WEBHOOK_URL": sentinel}), \
          patch("urllib.request.urlopen") as mock_urlopen:
         
         # mock urlopen to throw an HTTPError
@@ -49,7 +49,7 @@ def test_run_with_sentinel_does_not_leak(runner):
         assert sentinel not in stderr_str
         
         # run leak check
-        args = argparse.Namespace(tracked=False, env=["DISCORD_WEBHOOK_URL"], paths=[str(runner.out), str(runner.state)])
+        args = argparse.Namespace(tracked=False, env=["ECO_EVENTS_DISCORD_WEBHOOK_URL"], paths=[str(runner.out), str(runner.state)])
         assert cmd_check_leaks(args) == 0
 
 def test_check_leaks_tracked_repo_root():
