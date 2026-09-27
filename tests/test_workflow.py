@@ -6,6 +6,8 @@ import yaml
 def test_publish_workflow():
     wf_path = Path(".github/workflows/publish.yml")
     wf = yaml.safe_load(wf_path.read_text())
+    # Discord is the only notification channel; no Slack secret is wired in.
+    assert "ECO_EVENTS_SLACK_WEBHOOK_URL" not in wf_path.read_text()
     
     # Assert schedule and workflow_dispatch
     triggers = wf.get(True, wf.get("on", {}))

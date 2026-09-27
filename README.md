@@ -56,7 +56,7 @@ The feed is published using GitHub Pages.
 2. Go to repository **Settings** -> **Pages**.
 3. Set the **Source** to **GitHub Actions**.
 
-### 2. Discord and Slack Webhooks
+### 2. Discord Webhook
 1. In Discord, go to the `#eco-events` channel settings.
 2. Select **Integrations** -> **Webhooks** -> **New Webhook**.
 3. Copy the Webhook URL. Ensure this webhook is channel-scoped and has no other permissions.
@@ -70,4 +70,4 @@ GitHub may automatically disable scheduled workflows in inactive repositories. T
 1. Go to the repository's **Actions** tab.
 2. If there is a banner stating the scheduled workflow was disabled, click the button to **Enable workflow**.
 
-If a notification channel fails, the feed and `data/state.json` are still published, then the deploy job's **Fail if notify failed** step fails the run and names the failing channel(s) (e.g. `Notification delivery failed for: slack`); the same line appears in the build job's step summary. Webhook values are never printed. Undelivered notices for that channel are retried on the next run.
+If a notification channel fails, the feed and `data/state.json` are still published, then the deploy job's **Fail if notify failed** step fails the run and names the failing channel(s) (e.g. `Notification delivery failed for: discord`); the same line appears in the build job's step summary. Webhook values are never printed. Undelivered notices for that channel are retried on the next run.

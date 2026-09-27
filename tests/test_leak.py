@@ -17,7 +17,7 @@ def test_check_leaks_finds_sentinel(tmp_path, runner):
     feed = runner.out / "eco-events.ics"
     feed.write_text(feed.read_text() + sentinel_url)
 
-    args = argparse.Namespace(tracked=False, env=["ECO_EVENTS_DISCORD_WEBHOOK_URL", "ECO_EVENTS_SLACK_WEBHOOK_URL"], paths=[str(runner.out)])
+    args = argparse.Namespace(tracked=False, env=["ECO_EVENTS_DISCORD_WEBHOOK_URL"], paths=[str(runner.out)])
 
     with patch.dict(os.environ, {"ECO_EVENTS_DISCORD_WEBHOOK_URL": "secret123"}):
         assert cmd_check_leaks(args) == 1
@@ -60,13 +60,12 @@ def test_check_leaks_tracked_repo_root():
 
 
 def test_check_leaks_finds_slack_sentinel(tmp_path, runner):
+    # Generic pattern scan only: there is no Slack integration or secret.
     sentinel_url = "https://hooks.slack.com/services/" + "T00000000/B00000000/" + "XXXXXXXXXXXXXXXXXXXXXXXX"
 
     runner.build("baseline")
     feed = runner.out / "eco-events.ics"
     feed.write_text(feed.read_text() + sentinel_url)
 
-    args = argparse.Namespace(tracked=False, env=["ECO_EVENTS_SLACK_WEBHOOK_URL"], paths=[str(runner.out)])
-
-    with patch.dict(os.environ, {"ECO_EVENTS_SLACK_WEBHOOK_URL": "secret123"}):
-        assert cmd_check_leaks(args) == 1
+    args = argparse.Namespace(tracked=False, env=[], paths=[str(runner.out)])
+    assert cmd_check_leaks(args) == 1
