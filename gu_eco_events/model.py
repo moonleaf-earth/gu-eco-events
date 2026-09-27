@@ -54,6 +54,7 @@ class DetailPage:
     event_types: tuple[str, ...]
     rows: tuple[DetailRow, ...]
     location: str | None
+    cost: str | None
     registration_deadline: date | None
     links: tuple[Link, ...]
     text: str  # visible text of the event body, for keyword signals
@@ -72,6 +73,7 @@ class Event:
     start: str
     end: str
     location: str
+    cost: str | None
     online: bool
     cancelled: bool
     registration_required: bool
@@ -96,9 +98,17 @@ class Event:
         return datetime.fromisoformat(self.end).astimezone(TZ).date()
 
     def material_hash(self) -> str:
-        """Hash of the fields whose change warrants an update notification."""
+        """Hash of the fields whose change warrants a Discord update.
+
+        Deliberately excludes `cost` so hashes stored before cost was parsed
+        stay valid and Discord behaviour is unchanged."""
         payload = [self.title, self.all_day, self.start, self.end, self.location]
         return _hash(payload)
+
+    def paid_hash(self) -> str:
+        """Hash for the paid-event (Slack) notice: material fields plus cost,
+        so a corrected price produces exactly one update."""
+        return _hash([self.title, self.all_day, self.start, self.end, self.location, self.cost])
 
     def content_hash(self) -> str:
         return _hash(self.to_dict())
@@ -111,6 +121,7 @@ class Event:
     @classmethod
     def from_dict(cls, d: dict) -> "Event":
         d = dict(d)
+        d.setdefault("cost", None)  # snapshots written before cost was parsed
         d["categories"] = tuple(d.get("categories") or ())
         return cls(**d)
 

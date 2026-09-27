@@ -72,6 +72,7 @@ SEL_LAST_MODIFIED = ".content-footer time[datetime]"
 LABEL_DATE = "datum"
 LABEL_TIME = "tid"
 LABEL_PLACE = "plats"
+LABEL_COST = ("kostnad", "cost")
 LABEL_DEADLINE = ("sista anmälningsdag", "sista dag för anmälan", "anmälan senast")
 
 MONTHS = {
@@ -162,6 +163,12 @@ def parse_detail_page(html: str) -> DetailPage:
     places = meta.get(LABEL_PLACE, [])
     location = ", ".join(places) if places else None
 
+    cost = None
+    for key in LABEL_COST:
+        if key in meta and meta[key]:
+            cost = ", ".join(meta[key])
+            break
+
     deadline = None
     for key in LABEL_DEADLINE:
         for v in meta.get(key, []):
@@ -197,6 +204,7 @@ def parse_detail_page(html: str) -> DetailPage:
         event_types=event_types,
         rows=tuple(rows),
         location=location,
+        cost=cost,
         registration_deadline=deadline,
         links=tuple(links),
         text=_text(content),

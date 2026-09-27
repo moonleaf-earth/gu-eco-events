@@ -148,15 +148,36 @@ def report(result: BuildResult) -> None:
 # --- notification step -----------------------------------------------------
 
 MODES = ("dry-run", "send", "record-only")
-SEND_DELAY_SECONDS = 1.0  # stay well under Discord webhook rate limits
+CHANNELS = ("discord", "slack")
+SEND_DELAY_SECONDS = 1.0  # stay well under Discord/Slack webhook rate limits
+
+
+def _senders_from_env(channels: set[str]) -> dict:
+    """Build a sender per channel whose webhook secret is set and valid. A
+    missing/invalid secret leaves that channel's notices pending."""
+    senders = {}
+    for channel, from_env, make in (
+        ("discord", notify.webhook_from_env, notify.discord_sender),
+        ("slack", notify.slack_webhook_from_env, notify.slack_sender),
+    ):
+        if channel not in channels:
+            continue
+        try:
+            senders[channel] = make(from_env())
+        except notify.NotifyError as e:
+            print(f"{channel} webhook missing or invalid, {channel} notices left pending: {e}", file=sys.stderr)
+    return senders
 
 
 def run_notify(events: list[Event], counts: dict, state_path: str | Path, today: date,
-               mode: str, sender=None, out=None) -> int:
+               mode: str, senders: dict | None = None, out=None) -> int:
     """Plan against prior state, deliver per mode, persist state.
 
     dry-run:     print plan, record messages as sent (scratch/ops testing)
-    send:        deliver via webhook; record each only after success
+    send:        deliver via each channel's webhook; record each only after
+                 success. A channel without a (valid) secret keeps its notices
+                 pending. A delivery failure stops only that channel; the
+                 other channel keeps delivering.
     record-only: no delivery, markers untouched (used when no secret is set,
                  so installing the secret later still announces events)
     """
@@ -167,29 +188,30 @@ def run_notify(events: list[Event], counts: dict, state_path: str | Path, today:
     messages = notify.plan(events, prior, today)
     new_state = state_mod.update_snapshot(json.loads(json.dumps(prior)), events, today, counts)
 
-    if mode == "send" and messages and sender is None:
-        try:
-            sender = notify.discord_sender(notify.webhook_from_env())
-        except notify.NotifyError as e:
-            print(f"Webhook secret missing or invalid, falling back to record-only mode: {e}", file=sys.stderr)
-            mode = "record-only"
+    senders = dict(senders or {})
+    if mode == "send" and messages:
+        senders.update(_senders_from_env({m.channel for m in messages} - set(senders)))
 
     sent = 0
-    failure = None
+    failures: dict[str, notify.NotifyError] = {}
     try:
         for msg in messages:
             print(json.dumps({**msg.to_dict(), "mode": mode}, ensure_ascii=False), file=out)
             if mode == "record-only":
                 continue
             if mode == "send":
+                sender = senders.get(msg.channel)
+                if sender is None or msg.channel in failures:
+                    continue  # leave pending for a later run
                 try:
                     sender(msg.content)
                 except notify.NotifyError as e:
-                    failure = e
-                    break
+                    failures[msg.channel] = e
+                    continue
                 except Exception as e:  # noqa: BLE001 - never lose already-sent markers
-                    failure = notify.NotifyError(f"unexpected {type(e).__name__} during delivery")
-                    break
+                    failures[msg.channel] = notify.NotifyError(
+                        f"unexpected {type(e).__name__} during {msg.channel} delivery")
+                    continue
                 time.sleep(SEND_DELAY_SECONDS)
             notify.mark_sent(new_state, msg)
             sent += 1
@@ -198,10 +220,11 @@ def run_notify(events: list[Event], counts: dict, state_path: str | Path, today:
         # abort, so the next run does not resend them.
         state_mod.save(state_path, new_state)
     kinds = {k: sum(1 for m in messages if m.kind == k) for k in ("new", "update", "cancel")}
-    summary = {"planned": len(messages), **kinds, "recorded": sent, "mode": mode}
+    channels = {c: sum(1 for m in messages if m.channel == c) for c in CHANNELS}
+    failed = [c for c in CHANNELS if c in failures]
+    summary = {"planned": len(messages), **kinds, "channels": channels, "recorded": sent,
+               "mode": mode, "failed_channels": failed}
     print(json.dumps(summary), file=out)
-    if failure:
-        print(f"notification failed: {failure}", file=sys.stderr)
-        return 4
-    return 0
-
+    for c in failed:
+        print(f"{c} notification failed: {failures[c]}", file=sys.stderr)
+    return 4 if failed else 0
