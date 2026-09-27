@@ -152,7 +152,7 @@ SEND_DELAY_SECONDS = 1.0  # stay well under Discord webhook rate limits
 
 
 def run_notify(events: list[Event], counts: dict, state_path: str | Path, today: date,
-               mode: str, sender=None, out=None) -> int:
+               mode: str, senders=None, out=None) -> int:
     """Plan against prior state, deliver per mode, persist state.
 
     dry-run:     print plan, record messages as sent (scratch/ops testing)
@@ -167,12 +167,19 @@ def run_notify(events: list[Event], counts: dict, state_path: str | Path, today:
     messages = notify.plan(events, prior, today)
     new_state = state_mod.update_snapshot(json.loads(json.dumps(prior)), events, today, counts)
 
-    if mode == "send" and messages and sender is None:
-        try:
-            sender = notify.discord_sender(notify.webhook_from_env())
-        except notify.NotifyError as e:
-            print(f"Webhook secret missing or invalid, falling back to record-only mode: {e}", file=sys.stderr)
-            mode = "record-only"
+    senders = senders or {}
+    if mode == "send":
+        if "discord" not in senders:
+            try:
+                senders["discord"] = notify.discord_sender(notify.webhook_from_env())
+            except notify.NotifyError as e:
+                print(f"Discord webhook missing or invalid, notices pending: {e}", file=sys.stderr)
+
+        if "slack" not in senders:
+            try:
+                senders["slack"] = notify.slack_sender(notify.slack_webhook_from_env())
+            except notify.NotifyError as e:
+                print(f"Slack webhook missing or invalid, notices pending: {e}", file=sys.stderr)
 
     sent = 0
     failure = None
@@ -182,13 +189,16 @@ def run_notify(events: list[Event], counts: dict, state_path: str | Path, today:
             if mode == "record-only":
                 continue
             if mode == "send":
+                sender = senders.get(msg.channel)
+                if not sender:
+                    continue  # leave pending
                 try:
                     sender(msg.content)
                 except notify.NotifyError as e:
                     failure = e
                     break
                 except Exception as e:  # noqa: BLE001 - never lose already-sent markers
-                    failure = notify.NotifyError(f"unexpected {type(e).__name__} during delivery")
+                    failure = notify.NotifyError(f"unexpected {type(e).__name__} during {msg.channel} delivery")
                     break
                 time.sleep(SEND_DELAY_SECONDS)
             notify.mark_sent(new_state, msg)

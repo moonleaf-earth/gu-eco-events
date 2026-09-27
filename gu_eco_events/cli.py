@@ -83,6 +83,7 @@ def cmd_validate(args) -> int:
 
 
 _WEBHOOK_PATTERN = re.compile(rb"discord(app)?\.com/api/webhooks/\d+/[\w-]{20,}")
+_SLACK_WEBHOOK_PATTERN = re.compile(rb"hooks\.slack\.com/services/[A-Za-z0-9]+/[A-Za-z0-9]+/[A-Za-z0-9]+")
 
 
 def cmd_check_leaks(args) -> int:
@@ -105,7 +106,7 @@ def cmd_check_leaks(args) -> int:
             data = f.read_bytes()
         except (FileNotFoundError, IsADirectoryError):
             continue
-        if _WEBHOOK_PATTERN.search(data) or any(n in data for n in needles):
+        if _WEBHOOK_PATTERN.search(data) or _SLACK_WEBHOOK_PATTERN.search(data) or any(n in data for n in needles):
             bad.append(str(f))
     if bad:
         print("LEAK: webhook URL or secret value found in: " + ", ".join(sorted(set(bad))), file=sys.stderr)

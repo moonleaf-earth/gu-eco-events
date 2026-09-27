@@ -287,6 +287,7 @@ def build_events(groups: list[tuple[list[ListingHit], DetailPage]]):
                     start=start,
                     end=end,
                     location=location,
+                    cost=detail.cost,
                     online=online,
                     cancelled=cancelled,
                     registration_required=reg_required,

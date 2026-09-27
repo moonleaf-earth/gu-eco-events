@@ -6,10 +6,10 @@ from gu_eco_events.model import Event
 def test_notify_skipped_on_passed_deadline():
     e = Event(
         uid="1", url="http", title="T", all_day=False, start="2026-10-10T10:00:00", end="2026-10-10T11:00:00",
-        location="L", online=False, cancelled=False, registration_required=True, registration_url=None,
+        location="L", cost=None, online=False, cancelled=False, registration_required=True, registration_url=None,
         registration_deadline="2026-09-20", description="", last_modified=None, source_id="", categories=()
     )
-    
+
     # Run with today > deadline but < event start
     messages = plan([e], {}, date(2026, 9, 21))
     assert len(messages) == 0
@@ -21,10 +21,10 @@ def test_notify_skipped_on_passed_deadline():
 def test_notify_skipped_for_cancelled_no_registration():
     e = Event(
         uid="1", url="http", title="T", all_day=False, start="2026-10-10T10:00:00", end="2026-10-10T11:00:00",
-        location="L", online=False, cancelled=True, registration_required=False, registration_url=None,
+        location="L", cost=None, online=False, cancelled=True, registration_required=False, registration_url=None,
         registration_deadline=None, description="", last_modified=None, source_id="", categories=()
     )
-    
+
     state = {
         "events": {
             "1": {
@@ -34,17 +34,17 @@ def test_notify_skipped_for_cancelled_no_registration():
             }
         }
     }
-    
+
     messages = plan([e], state, date(2026, 9, 21))
     assert len(messages) == 0
 
 def test_notify_sent_for_cancelled_with_registration():
     e = Event(
         uid="1", url="http", title="T", all_day=False, start="2026-10-10T10:00:00", end="2026-10-10T11:00:00",
-        location="L", online=False, cancelled=True, registration_required=True, registration_url=None,
+        location="L", cost=None, online=False, cancelled=True, registration_required=True, registration_url=None,
         registration_deadline=None, description="", last_modified=None, source_id="", categories=()
     )
-    
+
     state = {
         "events": {
             "1": {
@@ -54,7 +54,7 @@ def test_notify_sent_for_cancelled_with_registration():
             }
         }
     }
-    
+
     messages = plan([e], state, date(2026, 9, 21))
     assert len(messages) == 1
     assert messages[0].kind == "cancel"
@@ -106,3 +106,98 @@ def test_discord_sender_wraps_incomplete_read(monkeypatch):
         discord_sender(WEBHOOK)("hello")
     assert "IncompleteRead" in str(ei.value)
     assert "secret-token-value" not in str(ei.value)
+
+def test_notify_routing_rules():
+    from datetime import date
+    from gu_eco_events.notify import plan
+    from gu_eco_events.model import Event
+
+    def _e(uid, req, cost):
+        return Event(
+            uid=uid, url="http", title="T", all_day=False, start="2026-10-10T10:00:00", end="2026-10-10T11:00:00",
+            location="L", cost=cost, online=False, cancelled=False, registration_required=req, registration_url=None,
+            registration_deadline=None, description="", last_modified=None, source_id="", categories=()
+        )
+
+    e_req_free = _e("1", True, "Free")
+    e_req_paid = _e("2", True, "100 kr")
+    e_open_paid = _e("3", False, "100 kr")
+    e_open_free = _e("4", False, "Free")
+    e_unknown = _e("5", True, "Se hemsidan")
+
+    events = [e_req_free, e_req_paid, e_open_paid, e_open_free, e_unknown]
+    state = {}
+    today = date(2026, 9, 21)
+
+    messages = plan(events, state, today)
+
+    # 1 Discord (req_free), 1 Discord + 1 Slack (req_paid), 1 Discord (unknown)
+    assert len(messages) == 4
+    channels_by_uid = {}
+    for m in messages:
+        channels_by_uid.setdefault(m.uid, []).append(m.channel)
+
+    assert "discord" in channels_by_uid["1"]
+    assert "slack" not in channels_by_uid.get("1", [])
+
+    assert "discord" in channels_by_uid["2"]
+    assert "slack" in channels_by_uid["2"]
+
+    assert "3" not in channels_by_uid
+    assert "4" not in channels_by_uid
+
+    assert "discord" in channels_by_uid["5"]
+    assert "slack" not in channels_by_uid.get("5", [])
+
+def test_slack_notified_independently():
+    from datetime import date
+    from gu_eco_events.notify import plan
+    from gu_eco_events.model import Event
+
+    e = Event(
+        uid="1", url="http", title="T", all_day=False, start="2026-10-10T10:00:00", end="2026-10-10T11:00:00",
+        location="L", cost="100 kr", online=False, cancelled=False, registration_required=True, registration_url=None,
+        registration_deadline=None, description="", last_modified=None, source_id="", categories=()
+    )
+
+    # Already discord notified, not slack
+    state = {
+        "events": {
+            "1": {
+                "notified_hash": e.material_hash()
+            }
+        }
+    }
+    today = date(2026, 9, 21)
+
+    messages = plan([e], state, today)
+    assert len(messages) == 1
+    assert messages[0].channel == "slack"
+    assert messages[0].kind == "new"
+
+def test_slack_cost_update():
+    from datetime import date
+    from gu_eco_events.notify import plan
+    from gu_eco_events.model import Event
+
+    e = Event(
+        uid="1", url="http", title="T", all_day=False, start="2026-10-10T10:00:00", end="2026-10-10T11:00:00",
+        location="L", cost="200 kr", online=False, cancelled=False, registration_required=True, registration_url=None,
+        registration_deadline=None, description="", last_modified=None, source_id="", categories=()
+    )
+
+    # Notified with old hash
+    state = {
+        "events": {
+            "1": {
+                "slack_notified_hash": "old_hash",
+                "notified_hash": e.material_hash() # discord is up to date
+            }
+        }
+    }
+    today = date(2026, 9, 21)
+
+    messages = plan([e], state, today)
+    assert len(messages) == 1
+    assert messages[0].channel == "slack"
+    assert messages[0].kind == "update"

@@ -54,6 +54,7 @@ class DetailPage:
     event_types: tuple[str, ...]
     rows: tuple[DetailRow, ...]
     location: str | None
+    cost: str | None
     registration_deadline: date | None
     links: tuple[Link, ...]
     text: str  # visible text of the event body, for keyword signals
@@ -72,6 +73,7 @@ class Event:
     start: str
     end: str
     location: str
+    cost: str | None
     online: bool
     cancelled: bool
     registration_required: bool
@@ -97,7 +99,7 @@ class Event:
 
     def material_hash(self) -> str:
         """Hash of the fields whose change warrants an update notification."""
-        payload = [self.title, self.all_day, self.start, self.end, self.location]
+        payload = [self.title, self.all_day, self.start, self.end, self.location, self.cost]
         return _hash(payload)
 
     def content_hash(self) -> str:
