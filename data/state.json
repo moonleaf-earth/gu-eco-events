@@ -29,7 +29,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "559be37e063e9810",
       "notified_hash": null,
       "seen_active": true
@@ -63,7 +63,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "fe37c11b8474b20e",
       "notified_hash": null,
       "seen_active": true
@@ -97,7 +97,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "33245d7cd037a2cb",
       "notified_hash": null,
       "seen_active": true
@@ -131,7 +131,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "1f8dc0d7b2d8f725",
       "notified_hash": null,
       "seen_active": true
@@ -165,7 +165,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "3e25892a4bd1472d",
       "notified_hash": null,
       "seen_active": true
@@ -197,26 +197,26 @@
         "url": "https://www.gu.se/evenemang/vem-bar-valfarden-vid-en-kris-perspektiv-pa-genus-och-resiliens"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "08f39cd26c011ec8",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-189021-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "68a310bf5addccc4",
+      "content_hash": "fcf7038a0d117267",
       "event": {
         "all_day": false,
-        "cancelled": false,
+        "cancelled": true,
         "categories": [
           "Hållbarhet & miljö",
           "Kultur & språk",
           "Naturvetenskap & IT"
         ],
         "cost": null,
-        "description": "Save the date! Nordic Tar Network bjuder in till webinarium om tjära den 5 oktober.\n\nKälla: https://www.gu.se/evenemang/webbinarium-om-tjara-med-nordic-tar-network-2026",
+        "description": "Save the date! Nordic Tar Network bjuder in till webinarium om tjära den 5 oktober.\n\nKälla: https://www.gu.se/evenemang/installt-webbinarium-om-tjara-med-nordic-tar-network-2026",
         "end": "2026-10-05T12:00:00+02:00",
-        "last_modified": "2026-09-17",
+        "last_modified": "2026-09-30",
         "location": "Online",
         "online": true,
         "registration_deadline": null,
@@ -224,13 +224,13 @@
         "registration_url": null,
         "source_id": "entity:node/189021:sv_1",
         "start": "2026-10-05T09:00:00+02:00",
-        "title": "Webbinarium om tjära med Nordic Tar Network 2026",
+        "title": "(INSTÄLLT!) Webbinarium om tjära med Nordic Tar Network 2026",
         "uid": "gu-node-189021-1@gu-eco-events.moonleaf-earth.github.io",
-        "url": "https://www.gu.se/evenemang/webbinarium-om-tjara-med-nordic-tar-network-2026"
+        "url": "https://www.gu.se/evenemang/installt-webbinarium-om-tjara-med-nordic-tar-network-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
-      "material_hash": "5a0d7ee9f2842a4b",
+      "last_seen": "2026-10-05",
+      "material_hash": "7a7a0920e6d8c890",
       "notified_hash": null,
       "seen_active": true
     },
@@ -261,14 +261,14 @@
         "url": "https://www.gu.se/evenemang/webbinarium-om-tjara-med-nordic-tar-network-2026-0"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "e4063a76ae9daebc",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-190572-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "f96b0504cb818fdd",
+      "content_hash": "7de00a0e57a75124",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -278,14 +278,14 @@
           "Utbildning & lärande"
         ],
         "cost": "950 kr plus moms",
-        "description": "Film är enkelt och billigt att producera och ett effektivt sätt för hantverkare att sprida kunskap och marknadsföra sin kompetens i sociala medier. Därför planerar Hantverkslaboratoriet en tredelad webbinariumskurs i filmproduktion för yrkesverksamma hantverkare.\n\nAnmälan krävs (sista anmälningsdag 2026-09-30): https://forms.office.com/e/Kq2ANGXDbJ\n\nKälla: https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form",
+        "description": "Film är enkelt och billigt att producera och ett effektivt sätt för hantverkare att sprida kunskap och marknadsföra sin kompetens i sociala medier. Därför planerar Hantverkslaboratoriet en tredelad webbinariumskurs i filmproduktion för yrkesverksamma hantverkare.\n\nAnmälan krävs (sista anmälningsdag 2026-09-30).\n\nKälla: https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form",
         "end": "2026-10-06T16:30:00+02:00",
         "last_modified": "2026-09-11",
         "location": "Online",
         "online": true,
         "registration_deadline": "2026-09-30",
         "registration_required": true,
-        "registration_url": "https://forms.office.com/e/Kq2ANGXDbJ",
+        "registration_url": null,
         "source_id": "entity:node/190572:sv_1",
         "start": "2026-10-06T15:00:00+02:00",
         "title": "Webbkurs för företagare: Hantverk i digital form",
@@ -293,14 +293,14 @@
         "url": "https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "463452d63346c500",
       "notified_hash": "e0848108937c67f4",
       "seen_active": true
     },
     "gu-node-190572-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "12404c340e18a703",
+      "content_hash": "efd9da35b849ec61",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -310,14 +310,14 @@
           "Utbildning & lärande"
         ],
         "cost": "950 kr plus moms",
-        "description": "Film är enkelt och billigt att producera och ett effektivt sätt för hantverkare att sprida kunskap och marknadsföra sin kompetens i sociala medier. Därför planerar Hantverkslaboratoriet en tredelad webbinariumskurs i filmproduktion för yrkesverksamma hantverkare.\n\nAnmälan krävs (sista anmälningsdag 2026-09-30): https://forms.office.com/e/Kq2ANGXDbJ\n\nKälla: https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form",
+        "description": "Film är enkelt och billigt att producera och ett effektivt sätt för hantverkare att sprida kunskap och marknadsföra sin kompetens i sociala medier. Därför planerar Hantverkslaboratoriet en tredelad webbinariumskurs i filmproduktion för yrkesverksamma hantverkare.\n\nAnmälan krävs (sista anmälningsdag 2026-09-30).\n\nKälla: https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form",
         "end": "2026-10-13T16:30:00+02:00",
         "last_modified": "2026-09-11",
         "location": "Online",
         "online": true,
         "registration_deadline": "2026-09-30",
         "registration_required": true,
-        "registration_url": "https://forms.office.com/e/Kq2ANGXDbJ",
+        "registration_url": null,
         "source_id": "entity:node/190572:sv_2",
         "start": "2026-10-13T15:00:00+02:00",
         "title": "Webbkurs för företagare: Hantverk i digital form",
@@ -325,14 +325,14 @@
         "url": "https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "3cef8dbbc4568eae",
       "notified_hash": "9d1e21e51dd34394",
       "seen_active": true
     },
     "gu-node-190572-3@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "ea51abc7ec9feb38",
+      "content_hash": "8b54783d22f35d9b",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -342,14 +342,14 @@
           "Utbildning & lärande"
         ],
         "cost": "950 kr plus moms",
-        "description": "Film är enkelt och billigt att producera och ett effektivt sätt för hantverkare att sprida kunskap och marknadsföra sin kompetens i sociala medier. Därför planerar Hantverkslaboratoriet en tredelad webbinariumskurs i filmproduktion för yrkesverksamma hantverkare.\n\nAnmälan krävs (sista anmälningsdag 2026-09-30): https://forms.office.com/e/Kq2ANGXDbJ\n\nKälla: https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form",
+        "description": "Film är enkelt och billigt att producera och ett effektivt sätt för hantverkare att sprida kunskap och marknadsföra sin kompetens i sociala medier. Därför planerar Hantverkslaboratoriet en tredelad webbinariumskurs i filmproduktion för yrkesverksamma hantverkare.\n\nAnmälan krävs (sista anmälningsdag 2026-09-30).\n\nKälla: https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form",
         "end": "2026-10-20T16:30:00+02:00",
         "last_modified": "2026-09-11",
         "location": "Online",
         "online": true,
         "registration_deadline": "2026-09-30",
         "registration_required": true,
-        "registration_url": "https://forms.office.com/e/Kq2ANGXDbJ",
+        "registration_url": null,
         "source_id": "entity:node/190572:sv_3",
         "start": "2026-10-20T15:00:00+02:00",
         "title": "Webbkurs för företagare: Hantverk i digital form",
@@ -357,7 +357,7 @@
         "url": "https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "6cb20f6a19f98d4b",
       "notified_hash": "dfa95f2b4b16d6a9",
       "seen_active": true
@@ -388,7 +388,7 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "bba4c9a085be75f6",
       "notified_hash": "bba4c9a085be75f6",
       "seen_active": true
@@ -419,7 +419,7 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "3ca38a5d7f595593",
       "notified_hash": "3ca38a5d7f595593",
       "seen_active": true
@@ -451,7 +451,7 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "b2789f90803d4b28",
       "notified_hash": "b2789f90803d4b28",
       "seen_active": true
@@ -483,7 +483,7 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "a4d87773915b413c",
       "notified_hash": "a4d87773915b413c",
       "seen_active": true
@@ -514,7 +514,7 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-oljan-det-svarta-guldet"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "1f6209cdfdabfa7c",
       "notified_hash": null,
       "seen_active": true
@@ -545,7 +545,7 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-marknaden-osynlig-hand-eller-jarngrepp"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "8e9a2c88efc237c7",
       "notified_hash": null,
       "seen_active": true
@@ -576,7 +576,7 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "e8e852be56b5c73c",
       "notified_hash": null,
       "seen_active": true
@@ -607,7 +607,7 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "9f2d0c1b79431dd8",
       "notified_hash": null,
       "seen_active": true
@@ -639,7 +639,7 @@
         "url": "https://www.gu.se/evenemang/qogceps-lunchseminarium-med-nils-droste"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "f8c77820e24111e3",
       "notified_hash": null,
       "seen_active": true
@@ -670,7 +670,7 @@
         "url": "https://www.gu.se/evenemang/refuseal-disposability-the-waste-commons-and-infrastructural-life-in-dakar"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "fb16f129184fe26e",
       "notified_hash": null,
       "seen_active": true
@@ -701,7 +701,7 @@
         "url": "https://www.gu.se/evenemang/carbon-purgatory-the-long-death-of-oil-and-gas"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "d2ec6e1694daaa3b",
       "notified_hash": null,
       "seen_active": true
@@ -767,7 +767,7 @@
         "url": "https://www.gu.se/evenemang/kulturens-varde-i-en-tid-som-tappat-sitt-omdome"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "fd7afb094aa2cd51",
       "notified_hash": null,
       "seen_active": true
@@ -863,7 +863,7 @@
         "url": "https://www.gu.se/evenemang/disputation-marcus-brogeby"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "2f5108e3fb6510e3",
       "notified_hash": null,
       "seen_active": true
@@ -899,7 +899,7 @@
         "url": "https://www.gu.se/evenemang/kasta-ankare-i-arkivet-forskning-utbildning-i-en-foranderlig-kunskapsvarld"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-09-28",
+      "last_seen": "2026-10-05",
       "material_hash": "df85453e8f46382f",
       "notified_hash": null,
       "seen_active": true
@@ -936,13 +936,44 @@
       "material_hash": "3d00bdae6d9c2650",
       "notified_hash": null,
       "seen_active": true
+    },
+    "gu-node-198347-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "6cd958c8ff02d8c5",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö",
+          "Samhälle & ekonomi"
+        ],
+        "cost": null,
+        "description": "Bee-Go - handslaget för biologisk mångfald och ekosystemtjänster i Göteborgsregionen - samlar näringsliv, stad, forskning och innovatörer i Kronhuset i Göteborg för en förmiddag om en av vår tids stora affärs- och samhällsfrågor: Biologisk mångfald.\n\nAnmälan krävs.\n\nKälla: https://www.gu.se/evenemang/biodivercity-2026-fran-ord-till-affar-och-handling",
+        "end": "2026-11-10T12:30:00+01:00",
+        "last_modified": "2026-09-29",
+        "location": "Kronhuset, Kronhusgatan 1 D, Göteborg",
+        "online": false,
+        "registration_deadline": null,
+        "registration_required": true,
+        "registration_url": null,
+        "source_id": "entity:node/198347:sv_1",
+        "start": "2026-11-10T08:15:00+01:00",
+        "title": "BiodiverCity 2026: Från ord till affär och handling",
+        "uid": "gu-node-198347-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/biodivercity-2026-fran-ord-till-affar-och-handling"
+      },
+      "first_seen": "2026-10-05",
+      "last_seen": "2026-10-05",
+      "material_hash": "bcaadfd62549995d",
+      "notified_hash": "bcaadfd62549995d",
+      "seen_active": true
     }
   },
   "last_success": {
-    "date": "2026-09-28",
-    "event_count": 25,
-    "parsed_count": 34,
-    "source_total_hits": 34
+    "date": "2026-10-05",
+    "event_count": 26,
+    "parsed_count": 33,
+    "source_total_hits": 33
   },
   "schema": 1
 }
