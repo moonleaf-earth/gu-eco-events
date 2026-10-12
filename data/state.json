@@ -2,41 +2,7 @@
   "events": {
     "gu-node-161403-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "280ad7d5b261bf8f",
-      "event": {
-        "all_day": false,
-        "cancelled": false,
-        "categories": [
-          "Hållbarhet & miljö",
-          "Hälsa & medicin",
-          "Samhälle & ekonomi",
-          "Student",
-          "Utbildning & lärande"
-        ],
-        "cost": null,
-        "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
-        "end": "2026-10-06T16:15:00+02:00",
-        "last_modified": "2026-09-24",
-        "location": "Läroverksgatan 15, Pedagogen, hus B, entréplan, innan trapphuset",
-        "online": false,
-        "registration_deadline": null,
-        "registration_required": false,
-        "registration_url": null,
-        "source_id": "entity:node/161403:sv_1",
-        "start": "2026-10-06T16:00:00+02:00",
-        "title": "Solidariskt kylskåp på Pedagogen",
-        "uid": "gu-node-161403-1@gu-eco-events.moonleaf-earth.github.io",
-        "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
-      },
-      "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
-      "material_hash": "559be37e063e9810",
-      "notified_hash": null,
-      "seen_active": true
-    },
-    "gu-node-161403-2@gu-eco-events.moonleaf-earth.github.io": {
-      "cancellation_notified": false,
-      "content_hash": "a788e380294236d4",
+      "content_hash": "98f11bfd83340a3f",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -50,27 +16,27 @@
         "cost": null,
         "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
         "end": "2026-10-27T16:15:00+01:00",
-        "last_modified": "2026-09-24",
+        "last_modified": "2026-10-09",
         "location": "Läroverksgatan 15, Pedagogen, hus B, entréplan, innan trapphuset",
         "online": false,
         "registration_deadline": null,
         "registration_required": false,
         "registration_url": null,
-        "source_id": "entity:node/161403:sv_2",
+        "source_id": "entity:node/161403:sv_1",
         "start": "2026-10-27T16:00:00+01:00",
         "title": "Solidariskt kylskåp på Pedagogen",
-        "uid": "gu-node-161403-2@gu-eco-events.moonleaf-earth.github.io",
+        "uid": "gu-node-161403-1@gu-eco-events.moonleaf-earth.github.io",
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "fe37c11b8474b20e",
       "notified_hash": null,
       "seen_active": true
     },
-    "gu-node-161403-3@gu-eco-events.moonleaf-earth.github.io": {
+    "gu-node-161403-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "0291c29dbc628e29",
+      "content_hash": "3c21ef3b90dec1b3",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -84,27 +50,27 @@
         "cost": null,
         "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
         "end": "2026-11-10T16:15:00+01:00",
-        "last_modified": "2026-09-24",
+        "last_modified": "2026-10-09",
         "location": "Läroverksgatan 15, Pedagogen, hus B, entréplan, innan trapphuset",
         "online": false,
         "registration_deadline": null,
         "registration_required": false,
         "registration_url": null,
-        "source_id": "entity:node/161403:sv_3",
+        "source_id": "entity:node/161403:sv_2",
         "start": "2026-11-10T16:00:00+01:00",
         "title": "Solidariskt kylskåp på Pedagogen",
-        "uid": "gu-node-161403-3@gu-eco-events.moonleaf-earth.github.io",
+        "uid": "gu-node-161403-2@gu-eco-events.moonleaf-earth.github.io",
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "33245d7cd037a2cb",
       "notified_hash": null,
       "seen_active": true
     },
-    "gu-node-161403-4@gu-eco-events.moonleaf-earth.github.io": {
+    "gu-node-161403-3@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "65c38a57cae59c1f",
+      "content_hash": "cbefd9e37571704d",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -118,21 +84,55 @@
         "cost": null,
         "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
         "end": "2026-12-01T16:15:00+01:00",
-        "last_modified": "2026-09-24",
+        "last_modified": "2026-10-09",
+        "location": "Läroverksgatan 15, Pedagogen, hus B, entréplan, innan trapphuset",
+        "online": false,
+        "registration_deadline": null,
+        "registration_required": false,
+        "registration_url": null,
+        "source_id": "entity:node/161403:sv_3",
+        "start": "2026-12-01T16:00:00+01:00",
+        "title": "Solidariskt kylskåp på Pedagogen",
+        "uid": "gu-node-161403-3@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
+      },
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-10-12",
+      "material_hash": "1f8dc0d7b2d8f725",
+      "notified_hash": null,
+      "seen_active": true
+    },
+    "gu-node-161403-4@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "0a515cae3fa8d435",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö",
+          "Hälsa & medicin",
+          "Samhälle & ekonomi",
+          "Student",
+          "Utbildning & lärande"
+        ],
+        "cost": null,
+        "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
+        "end": "2026-12-08T16:15:00+01:00",
+        "last_modified": "2026-10-09",
         "location": "Läroverksgatan 15, Pedagogen, hus B, entréplan, innan trapphuset",
         "online": false,
         "registration_deadline": null,
         "registration_required": false,
         "registration_url": null,
         "source_id": "entity:node/161403:sv_4",
-        "start": "2026-12-01T16:00:00+01:00",
+        "start": "2026-12-08T16:00:00+01:00",
         "title": "Solidariskt kylskåp på Pedagogen",
         "uid": "gu-node-161403-4@gu-eco-events.moonleaf-earth.github.io",
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
-      "material_hash": "1f8dc0d7b2d8f725",
+      "last_seen": "2026-10-12",
+      "material_hash": "3e25892a4bd1472d",
       "notified_hash": null,
       "seen_active": true
     },
@@ -197,7 +197,7 @@
         "url": "https://www.gu.se/evenemang/vem-bar-valfarden-vid-en-kris-perspektiv-pa-genus-och-resiliens"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "08f39cd26c011ec8",
       "notified_hash": null,
       "seen_active": true
@@ -261,7 +261,7 @@
         "url": "https://www.gu.se/evenemang/webbinarium-om-tjara-med-nordic-tar-network-2026-0"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "e4063a76ae9daebc",
       "notified_hash": null,
       "seen_active": true
@@ -325,7 +325,7 @@
         "url": "https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "3cef8dbbc4568eae",
       "notified_hash": "9d1e21e51dd34394",
       "seen_active": true
@@ -357,7 +357,7 @@
         "url": "https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "6cb20f6a19f98d4b",
       "notified_hash": "dfa95f2b4b16d6a9",
       "seen_active": true
@@ -388,7 +388,7 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "bba4c9a085be75f6",
       "notified_hash": "bba4c9a085be75f6",
       "seen_active": true
@@ -419,14 +419,14 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "3ca38a5d7f595593",
       "notified_hash": "3ca38a5d7f595593",
       "seen_active": true
     },
     "gu-node-192048-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "9e86e27c2955b199",
+      "content_hash": "63045e29632dde76",
       "event": {
         "all_day": true,
         "cancelled": false,
@@ -438,7 +438,7 @@
         "cost": null,
         "description": "Welcome to a lunch to lunch workshop that bring together researchers working on biodiversity, ecosystem change, chemical pollution, environmental risk, monitoring, governance and related fields. The workshop will stimulate discussion and mutual learning around chemical pollution as a driver of biodiversity change, identify possible areas of overlap across research environments and disciplines, and explore future activities that may emerge from the discussions.\n\nAnmälan krävs (sista anmälningsdag 2026-10-23): https://forms.cloud.microsoft/pages/responsepage.aspx?id=Me2YB7D1NUmGPHPuJQWAbjd-1MiFi9VAmUX7t39TbUdURU9BTUxDMEVVTFBMRFJPQ1NQWjgxMlZXNS4u&route=shorturl\n\nKälla: https://www.gu.se/evenemang/chemical-pollution-and-biodiversity",
         "end": "2026-11-24",
-        "last_modified": "2026-09-17",
+        "last_modified": "2026-10-09",
         "location": "Wallenberg Conference Centre, Gothenburg",
         "online": false,
         "registration_deadline": "2026-10-23",
@@ -451,14 +451,14 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "b2789f90803d4b28",
       "notified_hash": "b2789f90803d4b28",
       "seen_active": true
     },
     "gu-node-192048-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "72d3990cc1953719",
+      "content_hash": "6277b28d48610492",
       "event": {
         "all_day": true,
         "cancelled": false,
@@ -470,7 +470,7 @@
         "cost": null,
         "description": "Welcome to a lunch to lunch workshop that bring together researchers working on biodiversity, ecosystem change, chemical pollution, environmental risk, monitoring, governance and related fields. The workshop will stimulate discussion and mutual learning around chemical pollution as a driver of biodiversity change, identify possible areas of overlap across research environments and disciplines, and explore future activities that may emerge from the discussions.\n\nAnmälan krävs (sista anmälningsdag 2026-10-23): https://forms.cloud.microsoft/pages/responsepage.aspx?id=Me2YB7D1NUmGPHPuJQWAbjd-1MiFi9VAmUX7t39TbUdURU9BTUxDMEVVTFBMRFJPQ1NQWjgxMlZXNS4u&route=shorturl\n\nKälla: https://www.gu.se/evenemang/chemical-pollution-and-biodiversity",
         "end": "2026-11-25",
-        "last_modified": "2026-09-17",
+        "last_modified": "2026-10-09",
         "location": "Wallenberg Conference Centre, Gothenburg",
         "online": false,
         "registration_deadline": "2026-10-23",
@@ -483,7 +483,7 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "a4d87773915b413c",
       "notified_hash": "a4d87773915b413c",
       "seen_active": true
@@ -514,7 +514,7 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-oljan-det-svarta-guldet"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "1f6209cdfdabfa7c",
       "notified_hash": null,
       "seen_active": true
@@ -545,7 +545,7 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-marknaden-osynlig-hand-eller-jarngrepp"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "8e9a2c88efc237c7",
       "notified_hash": null,
       "seen_active": true
@@ -576,7 +576,7 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "e8e852be56b5c73c",
       "notified_hash": null,
       "seen_active": true
@@ -607,7 +607,7 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "9f2d0c1b79431dd8",
       "notified_hash": null,
       "seen_active": true
@@ -639,7 +639,7 @@
         "url": "https://www.gu.se/evenemang/qogceps-lunchseminarium-med-nils-droste"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "f8c77820e24111e3",
       "notified_hash": null,
       "seen_active": true
@@ -670,7 +670,7 @@
         "url": "https://www.gu.se/evenemang/refuseal-disposability-the-waste-commons-and-infrastructural-life-in-dakar"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "fb16f129184fe26e",
       "notified_hash": null,
       "seen_active": true
@@ -701,7 +701,7 @@
         "url": "https://www.gu.se/evenemang/carbon-purgatory-the-long-death-of-oil-and-gas"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "d2ec6e1694daaa3b",
       "notified_hash": null,
       "seen_active": true
@@ -767,7 +767,7 @@
         "url": "https://www.gu.se/evenemang/kulturens-varde-i-en-tid-som-tappat-sitt-omdome"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "fd7afb094aa2cd51",
       "notified_hash": null,
       "seen_active": true
@@ -863,14 +863,14 @@
         "url": "https://www.gu.se/evenemang/disputation-marcus-brogeby"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "2f5108e3fb6510e3",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-197089-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "16b7280d62833ee4",
+      "content_hash": "da91bc4ed9850ac2",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -884,14 +884,14 @@
           "Utbildning & lärande"
         ],
         "cost": null,
-        "description": "Del II i serien ”När arkiven sjunger”\n\nKälla: https://www.gu.se/evenemang/kasta-ankare-i-arkivet-forskning-utbildning-i-en-foranderlig-kunskapsvarld",
+        "description": "Del II i seminarieserien ”När arkiven sjunger” som Jonseredsverksamheten och Göteborgs universitetsbibliotek anordnar.\n\nAnmälan krävs: https://forms.cloud.microsoft/e/FXjYbSUSvj\n\nKälla: https://www.gu.se/evenemang/kasta-ankare-i-arkivet-forskning-utbildning-i-en-foranderlig-kunskapsvarld",
         "end": "2026-11-11T17:00:00+01:00",
-        "last_modified": "2026-09-11",
+        "last_modified": "2026-10-08",
         "location": "Göteborgs universitet, Vasaparken",
         "online": false,
         "registration_deadline": null,
-        "registration_required": false,
-        "registration_url": null,
+        "registration_required": true,
+        "registration_url": "https://forms.cloud.microsoft/e/FXjYbSUSvj",
         "source_id": "entity:node/197089:sv_1",
         "start": "2026-11-11T12:30:00+01:00",
         "title": "Kasta ankare i arkivet – forskning & utbildning i en föränderlig kunskapsvärld",
@@ -899,9 +899,9 @@
         "url": "https://www.gu.se/evenemang/kasta-ankare-i-arkivet-forskning-utbildning-i-en-foranderlig-kunskapsvarld"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-05",
+      "last_seen": "2026-10-12",
       "material_hash": "df85453e8f46382f",
-      "notified_hash": null,
+      "notified_hash": "df85453e8f46382f",
       "seen_active": true
     },
     "gu-node-197238-1@gu-eco-events.moonleaf-earth.github.io": {
@@ -939,7 +939,7 @@
     },
     "gu-node-198347-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "6cd958c8ff02d8c5",
+      "content_hash": "7b66d47123dec227",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -947,33 +947,96 @@
           "Hållbarhet & miljö",
           "Samhälle & ekonomi"
         ],
-        "cost": null,
-        "description": "Bee-Go - handslaget för biologisk mångfald och ekosystemtjänster i Göteborgsregionen - samlar näringsliv, stad, forskning och innovatörer i Kronhuset i Göteborg för en förmiddag om en av vår tids stora affärs- och samhällsfrågor: Biologisk mångfald.\n\nAnmälan krävs.\n\nKälla: https://www.gu.se/evenemang/biodivercity-2026-fran-ord-till-affar-och-handling",
+        "cost": "ingen avgift",
+        "description": "Bee-Go - handslaget för biologisk mångfald och ekosystemtjänster i Göteborgsregionen - samlar näringsliv, stad, forskning och innovatörer i Kronhuset i Göteborg för en förmiddag om en av vår tids stora affärs- och samhällsfrågor: Biologisk mångfald.\n\nAnmälan krävs (sista anmälningsdag 2026-11-05): https://link.gu.se/Events/7373/Apply\n\nKälla: https://www.gu.se/evenemang/biodivercity-2026-fran-ord-till-affar-och-handling",
         "end": "2026-11-10T12:30:00+01:00",
-        "last_modified": "2026-09-29",
+        "last_modified": "2026-10-08",
         "location": "Kronhuset, Kronhusgatan 1 D, Göteborg",
         "online": false,
-        "registration_deadline": null,
+        "registration_deadline": "2026-11-05",
         "registration_required": true,
-        "registration_url": null,
+        "registration_url": "https://link.gu.se/Events/7373/Apply",
         "source_id": "entity:node/198347:sv_1",
-        "start": "2026-11-10T08:15:00+01:00",
+        "start": "2026-11-10T08:00:00+01:00",
         "title": "BiodiverCity 2026: Från ord till affär och handling",
         "uid": "gu-node-198347-1@gu-eco-events.moonleaf-earth.github.io",
         "url": "https://www.gu.se/evenemang/biodivercity-2026-fran-ord-till-affar-och-handling"
       },
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-05",
-      "material_hash": "bcaadfd62549995d",
-      "notified_hash": "bcaadfd62549995d",
+      "last_seen": "2026-10-12",
+      "material_hash": "e4cb57cbfed5a524",
+      "notified_hash": "e4cb57cbfed5a524",
+      "seen_active": true
+    },
+    "gu-node-198771-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "c4909c6cdb3bb480",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö",
+          "Naturvetenskap & IT"
+        ],
+        "cost": null,
+        "description": "Jämtland rymmer några av Sveriges mest unika och ännu obeskrivna naturmiljöer. Fuktig luft från Atlanten och ett varierat landskap har skapat förutsättningar för artrika, suboceaniska granskogar – miljöer med drag av den tempererade och boreala regnskog som annars kanske främst förknippas med Nordamerikas västkust.\n\nKälla: https://www.gu.se/evenemang/vastra-jamtland-ett-oceaniskt-praglat-landskap",
+        "end": "2026-10-27T12:00:00+01:00",
+        "last_modified": "2026-10-07",
+        "location": "Sal 2123 Energin, Natrium",
+        "online": false,
+        "registration_deadline": null,
+        "registration_required": false,
+        "registration_url": null,
+        "source_id": "entity:node/198771:sv_1",
+        "start": "2026-10-27T10:00:00+01:00",
+        "title": "Västra Jämtland – ett oceaniskt präglat landskap",
+        "uid": "gu-node-198771-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/vastra-jamtland-ett-oceaniskt-praglat-landskap"
+      },
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "material_hash": "4207290515e06eaa",
+      "notified_hash": null,
+      "seen_active": true
+    },
+    "gu-node-198924-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "fb6bc5da4b264990",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Forskning",
+          "Hållbarhet & miljö",
+          "Samhälle & ekonomi"
+        ],
+        "cost": null,
+        "description": "Seminariet i miljösociologi samlar forskare som är intresserade av samspelet mellan sociala och ekologiska system, med särskilt fokus på dagens miljöutmaningar såsom klimatförändringar, föroreningar och avskogning. Seminariet utgör ett forum för utbyte mellan olika forskningsområden och främjar dialog om miljö- och samhällsförändringar. Forskningsområdena omfattar miljörörelser, kritisk hållbarhetsvetenskap, rättvisa omställningar, anpassning till klimatförändringar, relationer mellan vetenskap och politik, livsmedels- och jordbrukssystem samt sambanden mellan ojämlikhet, fattigdom och miljöförändringar.\n\nKälla: https://www.gu.se/evenemang/forskningsseminarier-miljosociologi",
+        "end": "2026-12-07T15:00:00+01:00",
+        "last_modified": "2026-10-08",
+        "location": "(Oftast i) Rum F417, ingång via Skanstorget 18, Göteborg.",
+        "online": false,
+        "registration_deadline": null,
+        "registration_required": false,
+        "registration_url": null,
+        "source_id": "entity:node/198924:sv_1",
+        "start": "2026-12-07T13:15:00+01:00",
+        "title": "Forskningsseminarier: Miljösociologi",
+        "uid": "gu-node-198924-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/forskningsseminarier-miljosociologi"
+      },
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "material_hash": "ae92403c4d99acb7",
+      "notified_hash": null,
       "seen_active": true
     }
   },
   "last_success": {
-    "date": "2026-10-05",
-    "event_count": 26,
-    "parsed_count": 33,
-    "source_total_hits": 33
+    "date": "2026-10-12",
+    "event_count": 25,
+    "parsed_count": 32,
+    "source_total_hits": 32
   },
   "schema": 1
 }
