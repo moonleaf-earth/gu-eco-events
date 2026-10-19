@@ -29,7 +29,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "fe37c11b8474b20e",
       "notified_hash": null,
       "seen_active": true
@@ -63,7 +63,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "33245d7cd037a2cb",
       "notified_hash": null,
       "seen_active": true
@@ -97,7 +97,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "1f8dc0d7b2d8f725",
       "notified_hash": null,
       "seen_active": true
@@ -131,7 +131,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "3e25892a4bd1472d",
       "notified_hash": null,
       "seen_active": true
@@ -197,7 +197,7 @@
         "url": "https://www.gu.se/evenemang/vem-bar-valfarden-vid-en-kris-perspektiv-pa-genus-och-resiliens"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "08f39cd26c011ec8",
       "notified_hash": null,
       "seen_active": true
@@ -261,7 +261,7 @@
         "url": "https://www.gu.se/evenemang/webbinarium-om-tjara-med-nordic-tar-network-2026-0"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "e4063a76ae9daebc",
       "notified_hash": null,
       "seen_active": true
@@ -357,14 +357,14 @@
         "url": "https://www.gu.se/evenemang/webbkurs-for-foretagare-hantverk-i-digital-form"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "6cb20f6a19f98d4b",
       "notified_hash": "dfa95f2b4b16d6a9",
       "seen_active": true
     },
     "gu-node-191400-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "8f06f08f8881fc62",
+      "content_hash": "bf106d093d9971d9",
       "event": {
         "all_day": true,
         "cancelled": false,
@@ -373,9 +373,9 @@
           "Naturvetenskap & IT"
         ],
         "cost": "Free of charge.",
-        "description": "Welcome to the Forum for the Arctic and Antarctic 2026 - Building on a Swedish foundation for the 5th International Polar Year! The event is hosted by the University of Gothenburg 30 November - 1 December. Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year.\n\nAnmälan krävs: https://www.trippus.net/Registration_Delegate\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
+        "description": "Welcome to the Forum for the Arctic and Antarctic 2026 - Building on a Swedish foundation for the 5th International Polar Year! The event is hosted by the University of Gothenburg 30 November - 1 December. Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year. Last day to register is 31 October!\n\nAnmälan krävs: https://www.trippus.net/Registration_Delegate\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
         "end": "2026-12-01",
-        "last_modified": "2026-09-18",
+        "last_modified": "2026-10-19",
         "location": "University of Gothenburg, Wallenberg Conference Centre, Medicinaregatan 20, 413 90 Göteborg",
         "online": false,
         "registration_deadline": null,
@@ -388,14 +388,14 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "bba4c9a085be75f6",
       "notified_hash": "bba4c9a085be75f6",
       "seen_active": true
     },
     "gu-node-191400-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "363ddb26870c0c98",
+      "content_hash": "7c07486b2de48235",
       "event": {
         "all_day": true,
         "cancelled": false,
@@ -404,9 +404,9 @@
           "Naturvetenskap & IT"
         ],
         "cost": "Free of charge.",
-        "description": "Welcome to the Forum for the Arctic and Antarctic 2026 - Building on a Swedish foundation for the 5th International Polar Year! The event is hosted by the University of Gothenburg 30 November - 1 December. Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year.\n\nAnmälan krävs: https://www.trippus.net/Registration_Delegate\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
+        "description": "Welcome to the Forum for the Arctic and Antarctic 2026 - Building on a Swedish foundation for the 5th International Polar Year! The event is hosted by the University of Gothenburg 30 November - 1 December. Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year. Last day to register is 31 October!\n\nAnmälan krävs: https://www.trippus.net/Registration_Delegate\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
         "end": "2026-12-02",
-        "last_modified": "2026-09-18",
+        "last_modified": "2026-10-19",
         "location": "University of Gothenburg, Wallenberg Conference Centre, Medicinaregatan 20, 413 90 Göteborg",
         "online": false,
         "registration_deadline": null,
@@ -419,7 +419,7 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "3ca38a5d7f595593",
       "notified_hash": "3ca38a5d7f595593",
       "seen_active": true
@@ -451,7 +451,7 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "b2789f90803d4b28",
       "notified_hash": "b2789f90803d4b28",
       "seen_active": true
@@ -483,7 +483,7 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "a4d87773915b413c",
       "notified_hash": "a4d87773915b413c",
       "seen_active": true
@@ -514,7 +514,7 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-oljan-det-svarta-guldet"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "1f6209cdfdabfa7c",
       "notified_hash": null,
       "seen_active": true
@@ -545,14 +545,14 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-marknaden-osynlig-hand-eller-jarngrepp"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "8e9a2c88efc237c7",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-194563-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "e74c1c07693ccc0d",
+      "content_hash": "cbc425f360e17b58",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -563,7 +563,7 @@
         "cost": null,
         "description": "Hösten 2026 lanserar forskningsprogrammet i samhällsvetenskapliga miljöstudier vid Institutionen för globala studier en ny dokumentärserie som belyser aktuella samhälls- och miljöfrågor genom film och efterföljande samtal. Visningarna är öppna för studenter, medarbetare och allmänheten.\n\nKälla: https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa",
         "end": "2026-11-11T19:00:00+01:00",
-        "last_modified": "2026-08-31",
+        "last_modified": "2026-10-19",
         "location": "Rum 514, Annedalsseminariet, Institutionen för globala studier",
         "online": false,
         "registration_deadline": null,
@@ -576,14 +576,14 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "e8e852be56b5c73c",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-194563-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "c9277479beee32b5",
+      "content_hash": "8fd4e7d04a325eae",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -594,7 +594,7 @@
         "cost": null,
         "description": "Hösten 2026 lanserar forskningsprogrammet i samhällsvetenskapliga miljöstudier vid Institutionen för globala studier en ny dokumentärserie som belyser aktuella samhälls- och miljöfrågor genom film och efterföljande samtal. Visningarna är öppna för studenter, medarbetare och allmänheten.\n\nKälla: https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa",
         "end": "2026-11-25T19:00:00+01:00",
-        "last_modified": "2026-08-31",
+        "last_modified": "2026-10-19",
         "location": "Rum 514, Annedalsseminariet, Institutionen för globala studier",
         "online": false,
         "registration_deadline": null,
@@ -607,7 +607,7 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "9f2d0c1b79431dd8",
       "notified_hash": null,
       "seen_active": true
@@ -639,7 +639,7 @@
         "url": "https://www.gu.se/evenemang/qogceps-lunchseminarium-med-nils-droste"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "f8c77820e24111e3",
       "notified_hash": null,
       "seen_active": true
@@ -670,7 +670,7 @@
         "url": "https://www.gu.se/evenemang/refuseal-disposability-the-waste-commons-and-infrastructural-life-in-dakar"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "fb16f129184fe26e",
       "notified_hash": null,
       "seen_active": true
@@ -701,7 +701,7 @@
         "url": "https://www.gu.se/evenemang/carbon-purgatory-the-long-death-of-oil-and-gas"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "d2ec6e1694daaa3b",
       "notified_hash": null,
       "seen_active": true
@@ -863,7 +863,7 @@
         "url": "https://www.gu.se/evenemang/disputation-marcus-brogeby"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "2f5108e3fb6510e3",
       "notified_hash": null,
       "seen_active": true
@@ -899,7 +899,7 @@
         "url": "https://www.gu.se/evenemang/kasta-ankare-i-arkivet-forskning-utbildning-i-en-foranderlig-kunskapsvarld"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "df85453e8f46382f",
       "notified_hash": "df85453e8f46382f",
       "seen_active": true
@@ -939,7 +939,7 @@
     },
     "gu-node-198347-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "7b66d47123dec227",
+      "content_hash": "fb04a03575629f0e",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -950,7 +950,7 @@
         "cost": "ingen avgift",
         "description": "Bee-Go - handslaget för biologisk mångfald och ekosystemtjänster i Göteborgsregionen - samlar näringsliv, stad, forskning och innovatörer i Kronhuset i Göteborg för en förmiddag om en av vår tids stora affärs- och samhällsfrågor: Biologisk mångfald.\n\nAnmälan krävs (sista anmälningsdag 2026-11-05): https://link.gu.se/Events/7373/Apply\n\nKälla: https://www.gu.se/evenemang/biodivercity-2026-fran-ord-till-affar-och-handling",
         "end": "2026-11-10T12:30:00+01:00",
-        "last_modified": "2026-10-08",
+        "last_modified": "2026-10-16",
         "location": "Kronhuset, Kronhusgatan 1 D, Göteborg",
         "online": false,
         "registration_deadline": "2026-11-05",
@@ -963,7 +963,7 @@
         "url": "https://www.gu.se/evenemang/biodivercity-2026-fran-ord-till-affar-och-handling"
       },
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "e4cb57cbfed5a524",
       "notified_hash": "e4cb57cbfed5a524",
       "seen_active": true
@@ -994,9 +994,44 @@
         "url": "https://www.gu.se/evenemang/vastra-jamtland-ett-oceaniskt-praglat-landskap"
       },
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "4207290515e06eaa",
       "notified_hash": null,
+      "seen_active": true
+    },
+    "gu-node-198827-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "d6b087a7af0b34ee",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Forskning",
+          "Hållbarhet & miljö",
+          "Kultur & språk",
+          "Naturvetenskap & IT",
+          "Samhälle & ekonomi",
+          "Utbildning & lärande"
+        ],
+        "cost": null,
+        "description": "Välkomna till serien Forskarfrukost i Vasaparken, där vi har fokus på att utveckla former för möten mellan akademi och övriga samhället, konst och vetenskap. Börja dagen i Vasaparken!\n\nAnmälan krävs: https://forms.cloud.microsoft/e/uFHHsvKjMN\n\nKälla: https://www.gu.se/evenemang/forskarfrukost-i-vasaparken-platsens-betydelse",
+        "end": "2027-01-13T11:00:00+01:00",
+        "last_modified": "2026-10-13",
+        "location": "Göteborgs universitet, Vasaparken",
+        "online": false,
+        "registration_deadline": null,
+        "registration_required": true,
+        "registration_url": "https://forms.cloud.microsoft/e/uFHHsvKjMN",
+        "source_id": "entity:node/198827:sv_1",
+        "start": "2027-01-13T08:30:00+01:00",
+        "title": "Forskarfrukost i Vasaparken: Platsens betydelse",
+        "uid": "gu-node-198827-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/forskarfrukost-i-vasaparken-platsens-betydelse"
+      },
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "material_hash": "f11c809f34f7cdae",
+      "notified_hash": "f11c809f34f7cdae",
       "seen_active": true
     },
     "gu-node-198924-1@gu-eco-events.moonleaf-earth.github.io": {
@@ -1026,15 +1061,15 @@
         "url": "https://www.gu.se/evenemang/forskningsseminarier-miljosociologi"
       },
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-19",
       "material_hash": "ae92403c4d99acb7",
       "notified_hash": null,
       "seen_active": true
     }
   },
   "last_success": {
-    "date": "2026-10-12",
-    "event_count": 25,
+    "date": "2026-10-19",
+    "event_count": 24,
     "parsed_count": 32,
     "source_total_hits": 32
   },
