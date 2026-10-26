@@ -29,7 +29,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "fe37c11b8474b20e",
       "notified_hash": null,
       "seen_active": true
@@ -63,7 +63,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "33245d7cd037a2cb",
       "notified_hash": null,
       "seen_active": true
@@ -97,7 +97,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "1f8dc0d7b2d8f725",
       "notified_hash": null,
       "seen_active": true
@@ -131,7 +131,7 @@
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "3e25892a4bd1472d",
       "notified_hash": null,
       "seen_active": true
@@ -261,7 +261,7 @@
         "url": "https://www.gu.se/evenemang/webbinarium-om-tjara-med-nordic-tar-network-2026-0"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "e4063a76ae9daebc",
       "notified_hash": null,
       "seen_active": true
@@ -364,18 +364,21 @@
     },
     "gu-node-191400-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "bf106d093d9971d9",
+      "content_hash": "1d8a797602cb453d",
       "event": {
         "all_day": true,
         "cancelled": false,
         "categories": [
+          "Forskning",
           "Hållbarhet & miljö",
-          "Naturvetenskap & IT"
+          "Kultur & språk",
+          "Naturvetenskap & IT",
+          "Samhälle & ekonomi"
         ],
         "cost": "Free of charge.",
-        "description": "Welcome to the Forum for the Arctic and Antarctic 2026 - Building on a Swedish foundation for the 5th International Polar Year! The event is hosted by the University of Gothenburg 30 November - 1 December. Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year. Last day to register is 31 October!\n\nAnmälan krävs: https://www.trippus.net/Registration_Delegate\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
+        "description": "Welcome to the Forum for the Arctic and Antarctic 2026! Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year! Last day to register is 31 October.\n\nAnmälan krävs: https://www.trippus.net/Registration_Delegate\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
         "end": "2026-12-01",
-        "last_modified": "2026-10-19",
+        "last_modified": "2026-10-23",
         "location": "University of Gothenburg, Wallenberg Conference Centre, Medicinaregatan 20, 413 90 Göteborg",
         "online": false,
         "registration_deadline": null,
@@ -388,25 +391,28 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "bba4c9a085be75f6",
       "notified_hash": "bba4c9a085be75f6",
       "seen_active": true
     },
     "gu-node-191400-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "7c07486b2de48235",
+      "content_hash": "f0fdbcbe7b2bb9f9",
       "event": {
         "all_day": true,
         "cancelled": false,
         "categories": [
+          "Forskning",
           "Hållbarhet & miljö",
-          "Naturvetenskap & IT"
+          "Kultur & språk",
+          "Naturvetenskap & IT",
+          "Samhälle & ekonomi"
         ],
         "cost": "Free of charge.",
-        "description": "Welcome to the Forum for the Arctic and Antarctic 2026 - Building on a Swedish foundation for the 5th International Polar Year! The event is hosted by the University of Gothenburg 30 November - 1 December. Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year. Last day to register is 31 October!\n\nAnmälan krävs: https://www.trippus.net/Registration_Delegate\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
+        "description": "Welcome to the Forum for the Arctic and Antarctic 2026! Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year! Last day to register is 31 October.\n\nAnmälan krävs: https://www.trippus.net/Registration_Delegate\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
         "end": "2026-12-02",
-        "last_modified": "2026-10-19",
+        "last_modified": "2026-10-23",
         "location": "University of Gothenburg, Wallenberg Conference Centre, Medicinaregatan 20, 413 90 Göteborg",
         "online": false,
         "registration_deadline": null,
@@ -419,14 +425,14 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "3ca38a5d7f595593",
       "notified_hash": "3ca38a5d7f595593",
       "seen_active": true
     },
     "gu-node-192048-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "63045e29632dde76",
+      "content_hash": "99cb251b62509199",
       "event": {
         "all_day": true,
         "cancelled": false,
@@ -436,14 +442,14 @@
           "Samhälle & ekonomi"
         ],
         "cost": null,
-        "description": "Welcome to a lunch to lunch workshop that bring together researchers working on biodiversity, ecosystem change, chemical pollution, environmental risk, monitoring, governance and related fields. The workshop will stimulate discussion and mutual learning around chemical pollution as a driver of biodiversity change, identify possible areas of overlap across research environments and disciplines, and explore future activities that may emerge from the discussions.\n\nAnmälan krävs (sista anmälningsdag 2026-10-23): https://forms.cloud.microsoft/pages/responsepage.aspx?id=Me2YB7D1NUmGPHPuJQWAbjd-1MiFi9VAmUX7t39TbUdURU9BTUxDMEVVTFBMRFJPQ1NQWjgxMlZXNS4u&route=shorturl\n\nKälla: https://www.gu.se/evenemang/chemical-pollution-and-biodiversity",
+        "description": "Welcome to a lunch to lunch workshop that bring together researchers working on biodiversity, ecosystem change, chemical pollution, environmental risk, monitoring, governance and related fields. The workshop will stimulate discussion and mutual learning around chemical pollution as a driver of biodiversity change, identify possible areas of overlap across research environments and disciplines, and explore future activities that may emerge from the discussions.\n\nAnmälan krävs (sista anmälningsdag 2026-10-23).\n\nKälla: https://www.gu.se/evenemang/chemical-pollution-and-biodiversity",
         "end": "2026-11-24",
         "last_modified": "2026-10-09",
         "location": "Wallenberg Conference Centre, Gothenburg",
         "online": false,
         "registration_deadline": "2026-10-23",
         "registration_required": true,
-        "registration_url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=Me2YB7D1NUmGPHPuJQWAbjd-1MiFi9VAmUX7t39TbUdURU9BTUxDMEVVTFBMRFJPQ1NQWjgxMlZXNS4u&route=shorturl",
+        "registration_url": null,
         "source_id": "entity:node/192048:sv_1",
         "start": "2026-11-23",
         "title": "Chemical Pollution and Biodiversity",
@@ -451,14 +457,14 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "b2789f90803d4b28",
       "notified_hash": "b2789f90803d4b28",
       "seen_active": true
     },
     "gu-node-192048-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "6277b28d48610492",
+      "content_hash": "4a28987c603abd6a",
       "event": {
         "all_day": true,
         "cancelled": false,
@@ -468,14 +474,14 @@
           "Samhälle & ekonomi"
         ],
         "cost": null,
-        "description": "Welcome to a lunch to lunch workshop that bring together researchers working on biodiversity, ecosystem change, chemical pollution, environmental risk, monitoring, governance and related fields. The workshop will stimulate discussion and mutual learning around chemical pollution as a driver of biodiversity change, identify possible areas of overlap across research environments and disciplines, and explore future activities that may emerge from the discussions.\n\nAnmälan krävs (sista anmälningsdag 2026-10-23): https://forms.cloud.microsoft/pages/responsepage.aspx?id=Me2YB7D1NUmGPHPuJQWAbjd-1MiFi9VAmUX7t39TbUdURU9BTUxDMEVVTFBMRFJPQ1NQWjgxMlZXNS4u&route=shorturl\n\nKälla: https://www.gu.se/evenemang/chemical-pollution-and-biodiversity",
+        "description": "Welcome to a lunch to lunch workshop that bring together researchers working on biodiversity, ecosystem change, chemical pollution, environmental risk, monitoring, governance and related fields. The workshop will stimulate discussion and mutual learning around chemical pollution as a driver of biodiversity change, identify possible areas of overlap across research environments and disciplines, and explore future activities that may emerge from the discussions.\n\nAnmälan krävs (sista anmälningsdag 2026-10-23).\n\nKälla: https://www.gu.se/evenemang/chemical-pollution-and-biodiversity",
         "end": "2026-11-25",
         "last_modified": "2026-10-09",
         "location": "Wallenberg Conference Centre, Gothenburg",
         "online": false,
         "registration_deadline": "2026-10-23",
         "registration_required": true,
-        "registration_url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=Me2YB7D1NUmGPHPuJQWAbjd-1MiFi9VAmUX7t39TbUdURU9BTUxDMEVVTFBMRFJPQ1NQWjgxMlZXNS4u&route=shorturl",
+        "registration_url": null,
         "source_id": "entity:node/192048:sv_2",
         "start": "2026-11-24",
         "title": "Chemical Pollution and Biodiversity",
@@ -483,14 +489,14 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "a4d87773915b413c",
       "notified_hash": "a4d87773915b413c",
       "seen_active": true
     },
     "gu-node-193892-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "719c620a1383e259",
+      "content_hash": "88e75e3938c9b44d",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -501,7 +507,7 @@
         "cost": null,
         "description": "Forskare i samtal om människans drömmar och mardrömmar om en bättre värld\n\nKälla: https://www.gu.se/evenemang/utopi-och-dystopi-oljan-det-svarta-guldet",
         "end": "2026-11-03T19:30:00+01:00",
-        "last_modified": "2026-09-15",
+        "last_modified": "2026-10-23",
         "location": "Hagateatern, Södra Allégatan 2, Göteborg",
         "online": false,
         "registration_deadline": null,
@@ -514,14 +520,14 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-oljan-det-svarta-guldet"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "1f6209cdfdabfa7c",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-193919-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "793e4bd0d175d79c",
+      "content_hash": "0a226dddaabd5cda",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -532,7 +538,7 @@
         "cost": null,
         "description": "Forskarsamtal om den fria marknaden på Hagateatern\n\nKälla: https://www.gu.se/evenemang/utopi-och-dystopi-marknaden-osynlig-hand-eller-jarngrepp",
         "end": "2026-12-01T19:30:00+01:00",
-        "last_modified": "2026-09-21",
+        "last_modified": "2026-10-23",
         "location": "Hagateatern, Södra Allégatan 2, Göteborg",
         "online": false,
         "registration_deadline": null,
@@ -545,7 +551,7 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-marknaden-osynlig-hand-eller-jarngrepp"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "8e9a2c88efc237c7",
       "notified_hash": null,
       "seen_active": true
@@ -576,7 +582,7 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "e8e852be56b5c73c",
       "notified_hash": null,
       "seen_active": true
@@ -607,7 +613,7 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "9f2d0c1b79431dd8",
       "notified_hash": null,
       "seen_active": true
@@ -639,7 +645,7 @@
         "url": "https://www.gu.se/evenemang/qogceps-lunchseminarium-med-nils-droste"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "f8c77820e24111e3",
       "notified_hash": null,
       "seen_active": true
@@ -670,7 +676,7 @@
         "url": "https://www.gu.se/evenemang/refuseal-disposability-the-waste-commons-and-infrastructural-life-in-dakar"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "fb16f129184fe26e",
       "notified_hash": null,
       "seen_active": true
@@ -701,7 +707,7 @@
         "url": "https://www.gu.se/evenemang/carbon-purgatory-the-long-death-of-oil-and-gas"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "d2ec6e1694daaa3b",
       "notified_hash": null,
       "seen_active": true
@@ -863,14 +869,14 @@
         "url": "https://www.gu.se/evenemang/disputation-marcus-brogeby"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "2f5108e3fb6510e3",
       "notified_hash": null,
       "seen_active": true
     },
     "gu-node-197089-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "da91bc4ed9850ac2",
+      "content_hash": "5cfa7f493eb2f7f6",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -886,7 +892,7 @@
         "cost": null,
         "description": "Del II i seminarieserien ”När arkiven sjunger” som Jonseredsverksamheten och Göteborgs universitetsbibliotek anordnar.\n\nAnmälan krävs: https://forms.cloud.microsoft/e/FXjYbSUSvj\n\nKälla: https://www.gu.se/evenemang/kasta-ankare-i-arkivet-forskning-utbildning-i-en-foranderlig-kunskapsvarld",
         "end": "2026-11-11T17:00:00+01:00",
-        "last_modified": "2026-10-08",
+        "last_modified": "2026-10-23",
         "location": "Göteborgs universitet, Vasaparken",
         "online": false,
         "registration_deadline": null,
@@ -899,7 +905,7 @@
         "url": "https://www.gu.se/evenemang/kasta-ankare-i-arkivet-forskning-utbildning-i-en-foranderlig-kunskapsvarld"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "df85453e8f46382f",
       "notified_hash": "df85453e8f46382f",
       "seen_active": true
@@ -939,7 +945,7 @@
     },
     "gu-node-198347-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "fb04a03575629f0e",
+      "content_hash": "006a9916659b3e9a",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -950,7 +956,7 @@
         "cost": "ingen avgift",
         "description": "Bee-Go - handslaget för biologisk mångfald och ekosystemtjänster i Göteborgsregionen - samlar näringsliv, stad, forskning och innovatörer i Kronhuset i Göteborg för en förmiddag om en av vår tids stora affärs- och samhällsfrågor: Biologisk mångfald.\n\nAnmälan krävs (sista anmälningsdag 2026-11-05): https://link.gu.se/Events/7373/Apply\n\nKälla: https://www.gu.se/evenemang/biodivercity-2026-fran-ord-till-affar-och-handling",
         "end": "2026-11-10T12:30:00+01:00",
-        "last_modified": "2026-10-16",
+        "last_modified": "2026-10-23",
         "location": "Kronhuset, Kronhusgatan 1 D, Göteborg",
         "online": false,
         "registration_deadline": "2026-11-05",
@@ -963,7 +969,7 @@
         "url": "https://www.gu.se/evenemang/biodivercity-2026-fran-ord-till-affar-och-handling"
       },
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "e4cb57cbfed5a524",
       "notified_hash": "e4cb57cbfed5a524",
       "seen_active": true
@@ -994,7 +1000,7 @@
         "url": "https://www.gu.se/evenemang/vastra-jamtland-ett-oceaniskt-praglat-landskap"
       },
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "4207290515e06eaa",
       "notified_hash": null,
       "seen_active": true
@@ -1029,7 +1035,7 @@
         "url": "https://www.gu.se/evenemang/forskarfrukost-i-vasaparken-platsens-betydelse"
       },
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "f11c809f34f7cdae",
       "notified_hash": "f11c809f34f7cdae",
       "seen_active": true
@@ -1061,17 +1067,48 @@
         "url": "https://www.gu.se/evenemang/forskningsseminarier-miljosociologi"
       },
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-26",
       "material_hash": "ae92403c4d99acb7",
+      "notified_hash": null,
+      "seen_active": true
+    },
+    "gu-node-199567-1@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "1b86a8262d4f9b0f",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö",
+          "Kultur & språk"
+        ],
+        "cost": null,
+        "description": "Hur skildras moderskap i en värld präglad av klimatförändringar? Föreläsning av Wiktoria Grzybowska som utforskar moderskapets roll i samtida klimatfiktion och dess betydelse för frågor om klimatansvar. Öppet seminarium, välkommen!\n\nKälla: https://www.gu.se/evenemang/antropocen-moderlighet-moderskap-i-klimatfiktion",
+        "end": "2026-10-27T17:00:00+01:00",
+        "last_modified": "2026-10-22",
+        "location": "Sal C442, Humanisten, Renströmsgatan 6 och Zoom",
+        "online": true,
+        "registration_deadline": null,
+        "registration_required": false,
+        "registration_url": null,
+        "source_id": "entity:node/199567:sv_1",
+        "start": "2026-10-27T15:15:00+01:00",
+        "title": "Antropocen moderlighet: Moderskap i klimatfiktion",
+        "uid": "gu-node-199567-1@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/antropocen-moderlighet-moderskap-i-klimatfiktion"
+      },
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "material_hash": "5ca49eaf49a899c3",
       "notified_hash": null,
       "seen_active": true
     }
   },
   "last_success": {
-    "date": "2026-10-19",
-    "event_count": 24,
-    "parsed_count": 32,
-    "source_total_hits": 32
+    "date": "2026-10-26",
+    "event_count": 23,
+    "parsed_count": 29,
+    "source_total_hits": 29
   },
   "schema": 1
 }
