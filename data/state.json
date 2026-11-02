@@ -2,41 +2,7 @@
   "events": {
     "gu-node-161403-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "98f11bfd83340a3f",
-      "event": {
-        "all_day": false,
-        "cancelled": false,
-        "categories": [
-          "Hållbarhet & miljö",
-          "Hälsa & medicin",
-          "Samhälle & ekonomi",
-          "Student",
-          "Utbildning & lärande"
-        ],
-        "cost": null,
-        "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
-        "end": "2026-10-27T16:15:00+01:00",
-        "last_modified": "2026-10-09",
-        "location": "Läroverksgatan 15, Pedagogen, hus B, entréplan, innan trapphuset",
-        "online": false,
-        "registration_deadline": null,
-        "registration_required": false,
-        "registration_url": null,
-        "source_id": "entity:node/161403:sv_1",
-        "start": "2026-10-27T16:00:00+01:00",
-        "title": "Solidariskt kylskåp på Pedagogen",
-        "uid": "gu-node-161403-1@gu-eco-events.moonleaf-earth.github.io",
-        "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
-      },
-      "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
-      "material_hash": "fe37c11b8474b20e",
-      "notified_hash": null,
-      "seen_active": true
-    },
-    "gu-node-161403-2@gu-eco-events.moonleaf-earth.github.io": {
-      "cancellation_notified": false,
-      "content_hash": "3c21ef3b90dec1b3",
+      "content_hash": "2b22f7aa957ab019",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -50,27 +16,27 @@
         "cost": null,
         "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
         "end": "2026-11-10T16:15:00+01:00",
-        "last_modified": "2026-10-09",
+        "last_modified": "2026-10-28",
         "location": "Läroverksgatan 15, Pedagogen, hus B, entréplan, innan trapphuset",
         "online": false,
         "registration_deadline": null,
         "registration_required": false,
         "registration_url": null,
-        "source_id": "entity:node/161403:sv_2",
+        "source_id": "entity:node/161403:sv_1",
         "start": "2026-11-10T16:00:00+01:00",
         "title": "Solidariskt kylskåp på Pedagogen",
-        "uid": "gu-node-161403-2@gu-eco-events.moonleaf-earth.github.io",
+        "uid": "gu-node-161403-1@gu-eco-events.moonleaf-earth.github.io",
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "33245d7cd037a2cb",
       "notified_hash": null,
       "seen_active": true
     },
-    "gu-node-161403-3@gu-eco-events.moonleaf-earth.github.io": {
+    "gu-node-161403-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "cbefd9e37571704d",
+      "content_hash": "0d957ec078cc8e20",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -84,21 +50,55 @@
         "cost": null,
         "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
         "end": "2026-12-01T16:15:00+01:00",
-        "last_modified": "2026-10-09",
+        "last_modified": "2026-10-28",
+        "location": "Läroverksgatan 15, Pedagogen, hus B, entréplan, innan trapphuset",
+        "online": false,
+        "registration_deadline": null,
+        "registration_required": false,
+        "registration_url": null,
+        "source_id": "entity:node/161403:sv_2",
+        "start": "2026-12-01T16:00:00+01:00",
+        "title": "Solidariskt kylskåp på Pedagogen",
+        "uid": "gu-node-161403-2@gu-eco-events.moonleaf-earth.github.io",
+        "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
+      },
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-11-02",
+      "material_hash": "1f8dc0d7b2d8f725",
+      "notified_hash": null,
+      "seen_active": true
+    },
+    "gu-node-161403-3@gu-eco-events.moonleaf-earth.github.io": {
+      "cancellation_notified": false,
+      "content_hash": "87fffc7628932bcc",
+      "event": {
+        "all_day": false,
+        "cancelled": false,
+        "categories": [
+          "Hållbarhet & miljö",
+          "Hälsa & medicin",
+          "Samhälle & ekonomi",
+          "Student",
+          "Utbildning & lärande"
+        ],
+        "cost": null,
+        "description": "Vid det solidariska kylskåpet kan du hämta räddad mat och bidra till minskad klimatpåverkan.\n\nKälla: https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen",
+        "end": "2026-12-08T16:15:00+01:00",
+        "last_modified": "2026-10-28",
         "location": "Läroverksgatan 15, Pedagogen, hus B, entréplan, innan trapphuset",
         "online": false,
         "registration_deadline": null,
         "registration_required": false,
         "registration_url": null,
         "source_id": "entity:node/161403:sv_3",
-        "start": "2026-12-01T16:00:00+01:00",
+        "start": "2026-12-08T16:00:00+01:00",
         "title": "Solidariskt kylskåp på Pedagogen",
         "uid": "gu-node-161403-3@gu-eco-events.moonleaf-earth.github.io",
         "url": "https://www.gu.se/evenemang/solidariskt-kylskap-pa-pedagogen"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
-      "material_hash": "1f8dc0d7b2d8f725",
+      "last_seen": "2026-11-02",
+      "material_hash": "3e25892a4bd1472d",
       "notified_hash": null,
       "seen_active": true
     },
@@ -261,7 +261,7 @@
         "url": "https://www.gu.se/evenemang/webbinarium-om-tjara-med-nordic-tar-network-2026-0"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "e4063a76ae9daebc",
       "notified_hash": null,
       "seen_active": true
@@ -364,7 +364,7 @@
     },
     "gu-node-191400-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "1d8a797602cb453d",
+      "content_hash": "c7d528c06582e623",
       "event": {
         "all_day": true,
         "cancelled": false,
@@ -376,14 +376,14 @@
           "Samhälle & ekonomi"
         ],
         "cost": "Free of charge.",
-        "description": "Welcome to the Forum for the Arctic and Antarctic 2026! Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year! Last day to register is 31 October.\n\nAnmälan krävs: https://www.trippus.net/Registration_Delegate\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
+        "description": "Welcome to the Forum for the Arctic and Antarctic 2026! Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year! Last day to register was 31 October.\n\nAnmälan krävs.\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
         "end": "2026-12-01",
-        "last_modified": "2026-10-23",
+        "last_modified": "2026-11-02",
         "location": "University of Gothenburg, Wallenberg Conference Centre, Medicinaregatan 20, 413 90 Göteborg",
         "online": false,
         "registration_deadline": null,
         "registration_required": true,
-        "registration_url": "https://www.trippus.net/Registration_Delegate",
+        "registration_url": null,
         "source_id": "entity:node/191400:sv_1",
         "start": "2026-11-30",
         "title": "Forum for the Arctic and Antarctic 2026",
@@ -391,14 +391,14 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "bba4c9a085be75f6",
       "notified_hash": "bba4c9a085be75f6",
       "seen_active": true
     },
     "gu-node-191400-2@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "f0fdbcbe7b2bb9f9",
+      "content_hash": "24c05ccb4d2f101c",
       "event": {
         "all_day": true,
         "cancelled": false,
@@ -410,14 +410,14 @@
           "Samhälle & ekonomi"
         ],
         "cost": "Free of charge.",
-        "description": "Welcome to the Forum for the Arctic and Antarctic 2026! Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year! Last day to register is 31 October.\n\nAnmälan krävs: https://www.trippus.net/Registration_Delegate\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
+        "description": "Welcome to the Forum for the Arctic and Antarctic 2026! Register now and join leading researchers, early-career scientists, stakeholders and agencies in shaping the next chapter of Sweden’s polar research community. Be part of the conversation and help build Sweden’s transdisciplinary foundation for the 5th International Polar Year! Last day to register was 31 October.\n\nAnmälan krävs.\n\nKälla: https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026",
         "end": "2026-12-02",
-        "last_modified": "2026-10-23",
+        "last_modified": "2026-11-02",
         "location": "University of Gothenburg, Wallenberg Conference Centre, Medicinaregatan 20, 413 90 Göteborg",
         "online": false,
         "registration_deadline": null,
         "registration_required": true,
-        "registration_url": "https://www.trippus.net/Registration_Delegate",
+        "registration_url": null,
         "source_id": "entity:node/191400:sv_2",
         "start": "2026-12-01",
         "title": "Forum for the Arctic and Antarctic 2026",
@@ -425,7 +425,7 @@
         "url": "https://www.gu.se/evenemang/forum-for-arctic-and-antarctic-2026"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "3ca38a5d7f595593",
       "notified_hash": "3ca38a5d7f595593",
       "seen_active": true
@@ -457,7 +457,7 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "b2789f90803d4b28",
       "notified_hash": "b2789f90803d4b28",
       "seen_active": true
@@ -489,7 +489,7 @@
         "url": "https://www.gu.se/evenemang/chemical-pollution-and-biodiversity"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "a4d87773915b413c",
       "notified_hash": "a4d87773915b413c",
       "seen_active": true
@@ -520,7 +520,7 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-oljan-det-svarta-guldet"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "1f6209cdfdabfa7c",
       "notified_hash": null,
       "seen_active": true
@@ -551,7 +551,7 @@
         "url": "https://www.gu.se/evenemang/utopi-och-dystopi-marknaden-osynlig-hand-eller-jarngrepp"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "8e9a2c88efc237c7",
       "notified_hash": null,
       "seen_active": true
@@ -582,7 +582,7 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "e8e852be56b5c73c",
       "notified_hash": null,
       "seen_active": true
@@ -613,7 +613,7 @@
         "url": "https://www.gu.se/evenemang/dokumentarserie-utvinning-avfall-och-miljorattvisa"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "9f2d0c1b79431dd8",
       "notified_hash": null,
       "seen_active": true
@@ -645,7 +645,7 @@
         "url": "https://www.gu.se/evenemang/qogceps-lunchseminarium-med-nils-droste"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "f8c77820e24111e3",
       "notified_hash": null,
       "seen_active": true
@@ -676,7 +676,7 @@
         "url": "https://www.gu.se/evenemang/refuseal-disposability-the-waste-commons-and-infrastructural-life-in-dakar"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "fb16f129184fe26e",
       "notified_hash": null,
       "seen_active": true
@@ -707,7 +707,7 @@
         "url": "https://www.gu.se/evenemang/carbon-purgatory-the-long-death-of-oil-and-gas"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "d2ec6e1694daaa3b",
       "notified_hash": null,
       "seen_active": true
@@ -869,7 +869,7 @@
         "url": "https://www.gu.se/evenemang/disputation-marcus-brogeby"
       },
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "2f5108e3fb6510e3",
       "notified_hash": null,
       "seen_active": true
@@ -969,7 +969,7 @@
         "url": "https://www.gu.se/evenemang/biodivercity-2026-fran-ord-till-affar-och-handling"
       },
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "e4cb57cbfed5a524",
       "notified_hash": "e4cb57cbfed5a524",
       "seen_active": true
@@ -1007,7 +1007,7 @@
     },
     "gu-node-198827-1@gu-eco-events.moonleaf-earth.github.io": {
       "cancellation_notified": false,
-      "content_hash": "d6b087a7af0b34ee",
+      "content_hash": "34a578baf9bb0ff8",
       "event": {
         "all_day": false,
         "cancelled": false,
@@ -1022,7 +1022,7 @@
         "cost": null,
         "description": "Välkomna till serien Forskarfrukost i Vasaparken, där vi har fokus på att utveckla former för möten mellan akademi och övriga samhället, konst och vetenskap. Börja dagen i Vasaparken!\n\nAnmälan krävs: https://forms.cloud.microsoft/e/uFHHsvKjMN\n\nKälla: https://www.gu.se/evenemang/forskarfrukost-i-vasaparken-platsens-betydelse",
         "end": "2027-01-13T11:00:00+01:00",
-        "last_modified": "2026-10-13",
+        "last_modified": "2026-10-27",
         "location": "Göteborgs universitet, Vasaparken",
         "online": false,
         "registration_deadline": null,
@@ -1035,7 +1035,7 @@
         "url": "https://www.gu.se/evenemang/forskarfrukost-i-vasaparken-platsens-betydelse"
       },
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "f11c809f34f7cdae",
       "notified_hash": "f11c809f34f7cdae",
       "seen_active": true
@@ -1067,7 +1067,7 @@
         "url": "https://www.gu.se/evenemang/forskningsseminarier-miljosociologi"
       },
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-11-02",
       "material_hash": "ae92403c4d99acb7",
       "notified_hash": null,
       "seen_active": true
@@ -1105,10 +1105,10 @@
     }
   },
   "last_success": {
-    "date": "2026-10-26",
-    "event_count": 23,
-    "parsed_count": 29,
-    "source_total_hits": 29
+    "date": "2026-11-02",
+    "event_count": 19,
+    "parsed_count": 26,
+    "source_total_hits": 26
   },
   "schema": 1
 }
